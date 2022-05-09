@@ -1,0 +1,94 @@
+.container{
+    width:90vw;
+    height: 51.7vw;
+    background-color: #000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vw;
+    padding-top: 1.3vw;
+
+}
+
+.wrapper{
+    background-color: aquamarine;
+    width: 85.65vw;
+    height:51.7vw ;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.screen{
+    background-color: bisque;
+    height:39.13vw;
+    border-radius: 1.5vw;
+    background: cover;
+    white-space: nowrap ;
+    overflow: hidden;
+    
+}
+
+.frame{
+    display: inline-block;
+    width:35.65vw;
+    height: 39.13vw;
+}
+.frame-1{
+    
+    background-color: blue;
+}
+.frame-2{
+    
+    background-color: rgb(226, 30, 151);
+}
+.frame-3{
+   
+    background-color: rgb(16, 165, 65);
+}
+.frame-4{
+   
+    background-color: rgb(30, 82, 131);
+}
+
+.control-block{
+    background-color:blueviolet;
+    height: 9.57vw;
+    margin-top: 3vw;
+}
+.text{
+    display: inline-block;
+    background-color: azure;
+    width: 15.22vw;
+    height: 3.5vw;
+    font-size: 3.5vw;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: top;
+}
+.control{
+    box-sizing: border-box;
+    display: inline-block;
+    background-color:antiquewhite ;
+    width: 8.05vw;
+    height:3.5vw;
+    margin-left: 61.7vw;
+    margin-right: auto;
+    vertical-align: top;
+    white-space: nowrap;
+}
+.button{
+    display: inline-block;
+    height:3.5vw;
+    width: 1.5vw;
+    border: .01vw solid black;
+
+}
+
+.blue-btn{
+    width: 1.1vw;
+    height: 1.1vw;
+    border-radius: 1.1vw;
+    background-color: rgb(43, 175, 236);
+    margin-left: .2vw;
+    margin-top: 1vw;
+}
