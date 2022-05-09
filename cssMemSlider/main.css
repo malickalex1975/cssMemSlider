@@ -66,8 +66,8 @@
     vertical-align: top;
 }
 .control{
-    box-sizing: border-box;
-    display: inline-block;
+    
+    display: inline-flex;
     background-color:antiquewhite ;
     width: 8.05vw;
     height:3.5vw;
@@ -77,9 +77,9 @@
     white-space: nowrap;
 }
 .button{
-    display: inline-block;
+    display: inline-flex;
     height:3.5vw;
-    width: 1.5vw;
+    width: 1.85vw;
     border: .01vw solid black;
 
 }
@@ -89,6 +89,128 @@
     height: 1.1vw;
     border-radius: 1.1vw;
     background-color: rgb(43, 175, 236);
-    margin-left: .2vw;
-    margin-top: 1vw;
+    margin-left: .4vw;
+    margin-top: 1.2vw;
+}
+
+.btn-1 .blue-btn{
+    width: .7vw;
+    height: .7vw;
+    background-color: transparent;
+    border: 0.2vw solid rgb(43, 175, 236);
+}
+
+
+@media screen and (max-width:720px) {
+    .container{
+        width:90vw;
+        height: 71vw;
+        background-color: #000;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10vw;
+        padding-top: 3vw;
+    
+    }
+    
+    .wrapper{
+        background-color: aquamarine;
+        width: 80vw;
+        height:71vw ;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    
+    .screen{
+        background-color: bisque;
+        height:36vw;
+        border-radius: 1.5vw;
+        background: cover;
+        white-space: nowrap ;
+        overflow: hidden;
+        
+    }
+    
+    .frame{
+        display: inline-block;
+        width:35.65vw;
+        height: 36vw;
+    }
+    .frame-1{
+        
+        background-color: blue;
+    }
+    .frame-2{
+        
+        background-color: rgb(226, 30, 151);
+    }
+    .frame-3{
+       
+        background-color: rgb(16, 165, 65);
+    }
+    .frame-4{
+       
+        background-color: rgb(30, 82, 131);
+    }
+    
+    .control-block{
+        display:grid;
+        grid-template-areas: 
+        ". . ."
+        " ctrl . ."
+        "txt . ."
+        ". . ."
+        ". . .";
+
+        background-color:blueviolet;
+        height: 35vw;
+        margin-top: 0vw;
+    }
+    .text{
+        display: inline-block;
+        grid-area: txt;
+        background-color: azure;
+        width: 35vw;
+        height: 8vw;
+        font-size: 8vw;
+        overflow: hidden;
+        white-space: nowrap;
+        vertical-align: top;
+    }
+    .control{
+        grid-area: ctrl;
+        display: inline-flex;
+        background-color:antiquewhite ;
+        width: 20vw;
+        height:8vw;
+        margin-left: 29.5vw;
+        margin-right: auto;
+        vertical-align: top;
+        white-space: nowrap;
+    }
+    .button{
+        display: inline-flex;
+        height:8vw;
+        width: 4.625vw;
+        border: .01vw solid black;
+    
+    }
+    
+    .blue-btn{
+        width: 3vw;
+        height: 3vw;
+        border-radius: 3vw;
+        background-color: rgb(43, 175, 236);
+        margin-left: .9vw;
+        margin-top: 2.4vw;
+    }
+    
+    .btn-1 .blue-btn{
+        width: 1.8vw;
+        height: 1.8vw;
+        background-color: transparent;
+        border: 0.6vw solid rgb(43, 175, 236);
+    }
+    
 }
