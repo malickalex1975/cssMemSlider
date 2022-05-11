@@ -1,216 +1,821 @@
-.container{
-    width:90vw;
+@keyframes text-slide1 {
+    from {
+        opacity: 0.5;
+        filter: blur(2vw);
+        transform: translateY(-16vw);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateY(0vw);
+
+    }
+}
+
+@keyframes text-slide2 {
+    from {
+        opacity: 0.5;
+        filter: blur(2vw);
+        transform: translateY(0vw);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateY(-4vw);
+
+    }
+}
+
+@keyframes text-slide3 {
+    from {
+        opacity: 0.5;
+        filter: blur(2vw);
+        transform: translateY(0vw);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateY(-8vw);
+
+    }
+}
+
+@keyframes text-slide4 {
+    from {
+        opacity: 0.5;
+        filter: blur(2vw);
+        transform: translateY(0vw);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateY(-12vw);
+
+    }
+}
+
+@keyframes fr1-slide {
+    from {
+        opacity: 0;
+        transform: translateX(-256.95vw);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0vw);
+
+
+    }
+}
+
+@keyframes fr2-slide {
+    from {
+        opacity: 0;
+        transform: translateX(0vw);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-86vw);
+
+
+    }
+}
+
+@keyframes fr3-slide {
+    from {
+        opacity: 0;
+        transform: translateX(-0vw);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-172vw);
+
+
+    }
+}
+
+@keyframes fr4-slide {
+    from {
+        opacity: 0;
+        transform: translateX(0vw);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-258vw);
+
+
+    }
+}
+
+
+.container {
+    width: 90vw;
     height: 51.7vw;
     background-color: #000;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10vw;
+    margin-top: 1vw;
     padding-top: 1.3vw;
 
 }
 
-.wrapper{
+.wrapper {
     background-color: aquamarine;
     width: 85.65vw;
-    height:51.7vw ;
+    height: 51.7vw;
     margin-left: auto;
     margin-right: auto;
+    white-space: nowrap;
 
 }
 
-.screen{
+.screen {
+
     background-color: bisque;
-    height:39.13vw;
+    height: 39.13vw;
     border-radius: 1.5vw;
-    background: cover;
-    white-space: nowrap ;
+    white-space: nowrap;
     overflow: hidden;
-    
+
 }
 
-.frame{
+.frame {
     display: inline-block;
-    width:35.65vw;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    width: 85.65vw;
     height: 39.13vw;
 }
-.frame-1{
-    
-    background-color: blue;
-}
-.frame-2{
-    
-    background-color: rgb(226, 30, 151);
-}
-.frame-3{
-   
-    background-color: rgb(16, 165, 65);
-}
-.frame-4{
-   
-    background-color: rgb(30, 82, 131);
+
+.frame-1 {
+    display: inline-block;
+    background-image: url("assets/move-div.jpg");
 }
 
-.control-block{
-    background-color:blueviolet;
+.frame-2 {
+    display: inline-block;
+    background-image: url("assets/looks-n-written.jpg");
+}
+
+.frame-3 {
+
+    background-image: url("assets/webdevelopers-hide.jpg");
+}
+
+.frame-4 {
+
+    background-image: url("assets/web-technologies.jpg");
+}
+
+.btn-1:hover .blue-btn {
+    border: #cdcdcd;
+}
+
+.anchor-2 :hover .blue-btn {
+    border: #cdcdcd;
+}
+
+.anchor-3:hover .blue-btn {
+    border: #cdcdcd;
+}
+
+.anchor-4 :hover .blue-btn {
+    border: #cdcdcd;
+}
+
+#fr1:target~.screen .inside {
+    position: relative;
+    animation: fr1-slide 1.5s;
+    animation-timing-function: ease-in-out;
+}
+
+#fr2:target~.screen .inside {
+    position: relative;
+    animation: fr2-slide .5s;
+    animation-timing-function: ease-in-out;
+    transform: translateX(-86vw);
+
+}
+
+#fr3:target~.screen .inside {
+    position: relative;
+    animation: fr3-slide 1s;
+    animation-timing-function: ease-in-out;
+    transform: translateX(-172vw);
+
+}
+
+#fr4:target~.screen .inside {
+    position: relative;
+    animation: fr4-slide 1.5s;
+    animation-timing-function: ease-in-out;
+    transform: translateX(-258vw);
+
+}
+
+#fr1:target~.control-block .text .text-wrapper {
+    position: relative;
+    animation: text-slide1 1.5s;
+    animation-timing-function: ease-in-out;
+    transform: translateY(-0vw);
+}
+
+#fr2:target~.control-block .text .text-wrapper {
+    position: relative;
+    animation: text-slide2 .5s;
+    animation-timing-function: ease-in-out;
+    transform: translateY(-4vw);
+}
+
+#fr3:target~.control-block .text .text-wrapper {
+    position: relative;
+    animation: text-slide3 1s;
+    animation-timing-function: ease-in-out;
+    transform: translateY(-8vw);
+}
+
+#fr4:target~.control-block .text .text-wrapper {
+    position: relative;
+    animation: text-slide4 1.5s;
+    animation-timing-function: ease-in-out;
+    transform: translateY(-12vw);
+}
+/*
+#fr1:target~.control-block .control .anchor-1 .button .blue-btn {
+
+    width: .6vw;
+    height: .6vw;
+    background-color: transparent;
+    border: 0.3vw solid rgb(43, 175, 236);
+
+}
+
+#fr1:target~.control-block .control .anchor-2 .button .blue-btn {
+
+    width: 0;
+    height: 0;
+    border: .6vw solid rgb(43, 175, 236);
+    border-radius: 1.1vw;
+    margin-left: .4vw;
+    margin-top: 1.2vw;
+
+}
+
+#fr1:target~.control-block .control .anchor-3 .button .blue-btn {
+
+    width: 0;
+    height: 0;
+    border: .6vw solid rgb(43, 175, 236);
+    border-radius: 1.1vw;
+    margin-left: .4vw;
+    margin-top: 1.2vw;
+
+}
+
+#fr1:target~.control-block .control .anchor-4 .button .blue-btn {
+
+    width: 0;
+    height: 0;
+    border: .6vw solid rgb(43, 175, 236);
+    border-radius: 1.1vw;
+    margin-left: .4vw;
+    margin-top: 1.2vw;
+
+}
+
+#fr2:target~.control-block .control .anchor-2 .button .blue-btn {
+
+    width: .6vw;
+    height: .6vw;
+    background-color: transparent;
+    border: 0.3vw solid rgb(43, 175, 236);
+
+}
+
+#fr2:target~.control-block .control .anchor-1 .button .blue-btn {
+
+    width: 0;
+    height: 0;
+    border: .6vw solid rgb(43, 175, 236);
+    border-radius: 1.1vw;
+    margin-left: .4vw;
+    margin-top: 1.2vw;
+
+}
+
+#fr2:target~.control-block .control .anchor-3 .button .blue-btn {
+
+    width: 0;
+    height: 0;
+    border: .6vw solid rgb(43, 175, 236);
+    border-radius: 1.1vw;
+    margin-left: .4vw;
+    margin-top: 1.2vw;
+
+}
+
+#fr2:target~.control-block .control .anchor-4 .button .blue-btn {
+
+    width: 0;
+    height: 0;
+    border: .6vw solid rgb(43, 175, 236);
+    border-radius: 1.1vw;
+    margin-left: .4vw;
+    margin-top: 1.2vw;
+
+}
+
+#fr3:target~.control-block .control .anchor-3 .button .blue-btn {
+
+    width: .6vw;
+    height: .6vw;
+    background-color: transparent;
+    border: 0.3vw solid rgb(43, 175, 236);
+
+}
+
+#fr3:target~.control-block .control .anchor-1 .button .blue-btn {
+
+    width: 0;
+    height: 0;
+    border: .6vw solid rgb(43, 175, 236);
+    border-radius: 1.1vw;
+    margin-left: .4vw;
+    margin-top: 1.2vw;
+
+}
+
+#fr3:target~.control-block .control .anchor-2 .button .blue-btn {
+
+    width: 0;
+    height: 0;
+    border: .6vw solid rgb(43, 175, 236);
+    border-radius: 1.1vw;
+    margin-left: .4vw;
+    margin-top: 1.2vw;
+
+}
+
+#fr3:target~.control-block .control .anchor-4 .button .blue-btn {
+
+    width: 0;
+    height: 0;
+    border: .6vw solid rgb(43, 175, 236);
+    border-radius: 1.1vw;
+    margin-left: .4vw;
+    margin-top: 1.2vw;
+
+}
+
+#fr4:target~.control-block .control .anchor-4 .button .blue-btn {
+
+    width: .6vw;
+    height: .6vw;
+    background-color: transparent;
+    border: 0.3vw solid rgb(43, 175, 236);
+
+}
+
+#fr4:target~.control-block .control .anchor-1 .button .blue-btn {
+
+    width: 0;
+    height: 0;
+    border: .6vw solid rgb(43, 175, 236);
+    border-radius: 1.1vw;
+    margin-left: .4vw;
+    margin-top: 1.2vw;
+
+}
+
+#fr4:target~.control-block .control .anchor-3 .button .blue-btn {
+
+    width: 0;
+    height: 0;
+    border: .6vw solid rgb(43, 175, 236);
+    border-radius: 1.1vw;
+    margin-left: .4vw;
+    margin-top: 1.2vw;
+
+}
+
+#fr4:target~.control-block .control .anchor-2 .button .blue-btn {
+
+    width: 0;
+    height: 0;
+    border: .6vw solid rgb(43, 175, 236);
+    border-radius: 1.1vw;
+    margin-left: .4vw;
+    margin-top: 1.2vw;
+
+}
+*/
+.control-block {
+
+    background-color: blueviolet;
     height: 9.57vw;
     margin-top: 3vw;
 }
-.text{
+
+.text {
     display: inline-block;
     background-color: azure;
-    width: 15.22vw;
-    height: 3.5vw;
+    width: 50vw;
+    height: 4vw;
     font-size: 3.5vw;
     overflow: hidden;
-    white-space: nowrap;
     vertical-align: top;
+
+
 }
-.control{
-    
+
+
+.control {
+
     display: inline-flex;
-    background-color:antiquewhite ;
+    background-color: antiquewhite;
     width: 8.05vw;
-    height:3.5vw;
-    margin-left: 61.7vw;
+    height: 3.5vw;
+    margin-left: 26.9vw;
     margin-right: auto;
     vertical-align: top;
     white-space: nowrap;
 }
-.button{
+
+.button {
     display: inline-flex;
-    height:3.5vw;
+    height: 3.5vw;
     width: 1.85vw;
     border: .01vw solid black;
 
 }
 
-.blue-btn{
-    width: 1.1vw;
-    height: 1.1vw;
+.blue-btn {
+    width: 0;
+    height: 0;
+    border: .6vw solid rgb(43, 175, 236);
     border-radius: 1.1vw;
-    background-color: rgb(43, 175, 236);
     margin-left: .4vw;
     margin-top: 1.2vw;
+
 }
 
-.btn-1 .blue-btn{
-    width: .7vw;
-    height: .7vw;
+.btn-1 .blue-btn {
+    width: .6vw;
+    height: .6vw;
     background-color: transparent;
-    border: 0.2vw solid rgb(43, 175, 236);
+    border: 0.3vw solid rgb(43, 175, 236);
+
 }
+
 
 
 @media screen and (max-width:720px) {
-    .container{
-        width:90vw;
+
+    @keyframes fr1-slide {
+        from {
+            opacity: 0;
+            transform: translateX(-240vw);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0vw);
+
+
+        }
+    }
+
+    @keyframes fr2-slide {
+        from {
+            opacity: 0;
+            transform: translateX(0vw);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(-81vw);
+
+
+        }
+    }
+
+    @keyframes fr3-slide {
+        from {
+            opacity: 0;
+            transform: translateX(0vw);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(-162vw);
+
+
+        }
+    }
+
+    @keyframes fr4-slide {
+        from {
+            opacity: 0;
+            transform: translateX(0vw);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(-242vw);
+
+
+        }
+    }
+
+
+
+    .container {
+        width: 90vw;
         height: 71vw;
-        background-color: #000;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10vw;
+        margin-top: 1vw;
         padding-top: 3vw;
-    
+
     }
-    
-    .wrapper{
-        background-color: aquamarine;
+
+    .wrapper {
         width: 80vw;
-        height:71vw ;
-        margin-left: auto;
-        margin-right: auto;
-    
+        height: 71vw;
+
+
     }
-    
-    .screen{
-        background-color: bisque;
-        height:36vw;
+
+    .screen {
+
+        height: 36vw;
         border-radius: 1.5vw;
-        background: cover;
-        white-space: nowrap ;
-        overflow: hidden;
-        
+
+
     }
-    
-    .frame{
-        display: inline-block;
-        width:35.65vw;
+
+    .frame {
+
+        width: 80vw;
         height: 36vw;
     }
-    .frame-1{
-        
-        background-color: blue;
-    }
-    .frame-2{
-        
-        background-color: rgb(226, 30, 151);
-    }
-    .frame-3{
-       
-        background-color: rgb(16, 165, 65);
-    }
-    .frame-4{
-       
-        background-color: rgb(30, 82, 131);
-    }
-    
-    .control-block{
-        display:grid;
-        grid-template-areas: 
-        ". . ."
-        " ctrl . ."
-        "txt . ."
-        ". . ."
-        ". . .";
 
-        background-color:blueviolet;
+
+    .control-block {
+        display: grid;
+        grid-template-areas:
+            ". . ."
+            " ctrl . ."
+            "txt . ."
+            ". . ."
+            ". . .";
         height: 35vw;
         margin-top: 0vw;
     }
-    .text{
-        display: inline-block;
+
+    .text {
+
         grid-area: txt;
         background-color: azure;
-        width: 35vw;
-        height: 8vw;
-        font-size: 8vw;
-        overflow: hidden;
-        white-space: nowrap;
-        vertical-align: top;
+        width: 60vw;
+        height: 4vw;
+        font-size: 3.5vw;
+
     }
-    .control{
+
+    .control {
         grid-area: ctrl;
-        display: inline-flex;
-        background-color:antiquewhite ;
         width: 20vw;
-        height:8vw;
-        margin-left: 29.5vw;
-        margin-right: auto;
-        vertical-align: top;
-        white-space: nowrap;
+        height: 8vw;
+        margin-left: 30vw;
+
     }
-    .button{
-        display: inline-flex;
-        height:8vw;
+
+    .button {
+        height: 8vw;
         width: 4.625vw;
         border: .01vw solid black;
-    
+
     }
-    
-    .blue-btn{
-        width: 3vw;
-        height: 3vw;
+
+    .blue-btn {
+        width: 0vw;
+        height: 0vw;
         border-radius: 3vw;
-        background-color: rgb(43, 175, 236);
-        margin-left: .9vw;
-        margin-top: 2.4vw;
+        border: 1.4vw solid rgb(43, 175, 236);
+        margin-left: .8vw;
+        margin-top: 2.6vw;
     }
-    
-    .btn-1 .blue-btn{
+
+    .btn-1 .blue-btn {
         width: 1.8vw;
         height: 1.8vw;
         background-color: transparent;
-        border: 0.6vw solid rgb(43, 175, 236);
+        border: 0.5vw solid rgb(43, 175, 236);
     }
-    
+
+    #fr1:target~.screen .inside {
+        position: relative;
+        animation: fr1-slide 1.5s;
+        animation-timing-function: ease-in-out;
+    }
+
+    #fr2:target~.screen .inside {
+        position: relative;
+        animation: fr2-slide .5s;
+        animation-timing-function: ease-in-out;
+        transform: translateX(-81vw);
+
+    }
+
+    #fr3:target~.screen .inside {
+        position: relative;
+        animation: fr3-slide 1s;
+        animation-timing-function: ease-in-out;
+        transform: translateX(-162vw);
+
+
+    }
+
+    #fr4:target~.screen .inside {
+        position: relative;
+        animation: fr4-slide 1.5s;
+        animation-timing-function: ease-in-out;
+        transform: translateX(-242vw);
+
+    }
+
+
+    #fr1:target~.control-block .control .anchor-1 .button .blue-btn {
+
+        width: 1.8vw;
+        height: 1.8vw;
+        background-color: transparent;
+        border: 0.5vw solid rgb(43, 175, 236);
+
+    }
+
+    #fr1:target~.control-block .control .anchor-2 .button .blue-btn {
+
+        width: 0vw;
+        height: 0vw;
+        border-radius: 3vw;
+        border: 1.4vw solid rgb(43, 175, 236);
+        margin-left: .8vw;
+        margin-top: 2.6vw;
+
+    }
+
+    #fr1:target~.control-block .control .anchor-3 .button .blue-btn {
+
+        width: 0vw;
+        height: 0vw;
+        border-radius: 3vw;
+        border: 1.4vw solid rgb(43, 175, 236);
+        margin-left: .8vw;
+        margin-top: 2.6vw;
+
+    }
+
+    #fr1:target~.control-block .control .anchor-4 .button .blue-btn {
+
+        width: 0vw;
+        height: 0vw;
+        border-radius: 3vw;
+        border: 1.4vw solid rgb(43, 175, 236);
+        margin-left: .8vw;
+        margin-top: 2.6vw;
+
+    }
+
+    #fr2:target~.control-block .control .anchor-2 .button .blue-btn {
+
+        width: 1.8vw;
+        height: 1.8vw;
+        background-color: transparent;
+        border: 0.5vw solid rgb(43, 175, 236);
+    }
+
+    #fr2:target~.control-block .control .anchor-1 .button .blue-btn {
+
+        width: 0vw;
+        height: 0vw;
+        border-radius: 3vw;
+        border: 1.4vw solid rgb(43, 175, 236);
+        margin-left: .8vw;
+        margin-top: 2.6vw;
+
+    }
+
+    #fr2:target~.control-block .control .anchor-3 .button .blue-btn {
+
+        width: 0vw;
+        height: 0vw;
+        border-radius: 3vw;
+        border: 1.4vw solid rgb(43, 175, 236);
+        margin-left: .8vw;
+        margin-top: 2.6vw;
+
+    }
+
+    #fr2:target~.control-block .control .anchor-4 .button .blue-btn {
+
+        width: 0vw;
+        height: 0vw;
+        border-radius: 3vw;
+        border: 1.4vw solid rgb(43, 175, 236);
+        margin-left: .8vw;
+        margin-top: 2.6vw;
+
+    }
+
+    #fr3:target~.control-block .control .anchor-3 .button .blue-btn {
+
+        width: 1.8vw;
+        height: 1.8vw;
+        background-color: transparent;
+        border: 0.5vw solid rgb(43, 175, 236);
+
+    }
+
+    #fr3:target~.control-block .control .anchor-1 .button .blue-btn {
+
+        width: 0vw;
+        height: 0vw;
+        border-radius: 3vw;
+        border: 1.4vw solid rgb(43, 175, 236);
+        margin-left: .8vw;
+        margin-top: 2.6vw;
+
+    }
+
+    #fr3:target~.control-block .control .anchor-2 .button .blue-btn {
+
+        width: 0vw;
+        height: 0vw;
+        border-radius: 3vw;
+        border: 1.4vw solid rgb(43, 175, 236);
+        margin-left: .8vw;
+        margin-top: 2.6vw;
+
+    }
+
+    #fr3:target~.control-block .control .anchor-4 .button .blue-btn {
+
+        width: 0vw;
+        height: 0vw;
+        border-radius: 3vw;
+        border: 1.4vw solid rgb(43, 175, 236);
+        margin-left: .8vw;
+        margin-top: 2.6vw;
+    }
+
+    #fr4:target~.control-block .control .anchor-4 .button .blue-btn {
+
+        width: 1.8vw;
+        height: 1.8vw;
+        background-color: transparent;
+        border: 0.5vw solid rgb(43, 175, 236);
+
+    }
+
+    #fr4:target~.control-block .control .anchor-1 .button .blue-btn {
+
+        width: 0vw;
+        height: 0vw;
+        border-radius: 3vw;
+        border: 1.4vw solid rgb(43, 175, 236);
+        margin-left: .8vw;
+        margin-top: 2.6vw;
+
+    }
+
+    #fr4:target~.control-block .control .anchor-3 .button .blue-btn {
+
+        width: 0vw;
+        height: 0vw;
+        border-radius: 3vw;
+        border: 1.4vw solid rgb(43, 175, 236);
+        margin-left: .8vw;
+        margin-top: 2.6vw;
+
+    }
+
+    #fr4:target~.control-block .control .anchor-2 .button .blue-btn {
+
+        width: 0vw;
+        height: 0vw;
+        border-radius: 3vw;
+        border: 1.4vw solid rgb(43, 175, 236);
+        margin-left: .8vw;
+        margin-top: 2.6vw;
+
+    }
 }
