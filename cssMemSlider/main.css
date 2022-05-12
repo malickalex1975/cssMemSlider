@@ -115,6 +115,7 @@
 }
 
 
+
 .container {
     width: 90vw;
     height: 51.7vw;
@@ -127,7 +128,6 @@
 }
 
 .wrapper {
-    background-color: aquamarine;
     width: 85.65vw;
     height: 51.7vw;
     margin-left: auto;
@@ -138,7 +138,7 @@
 
 .screen {
 
-    background-color: bisque;
+    
     height: 39.13vw;
     border-radius: 1.5vw;
     white-space: nowrap;
@@ -156,13 +156,14 @@
     height: 39.13vw;
 }
 
+
 .frame-1 {
-    display: inline-block;
+    
     background-image: url("assets/move-div.jpg");
 }
 
 .frame-2 {
-    display: inline-block;
+   
     background-image: url("assets/looks-n-written.jpg");
 }
 
@@ -174,22 +175,6 @@
 .frame-4 {
 
     background-image: url("assets/web-technologies.jpg");
-}
-
-.btn-1:hover .blue-btn {
-    border: #cdcdcd;
-}
-
-.anchor-2 :hover .blue-btn {
-    border: #cdcdcd;
-}
-
-.anchor-3:hover .blue-btn {
-    border: #cdcdcd;
-}
-
-.anchor-4 :hover .blue-btn {
-    border: #cdcdcd;
 }
 
 #fr1:target~.screen .inside {
@@ -249,22 +234,22 @@
     animation-timing-function: ease-in-out;
     transform: translateY(-12vw);
 }
-/*
+
 #fr1:target~.control-block .control .anchor-1 .button .blue-btn {
 
     width: .6vw;
     height: .6vw;
     background-color: transparent;
-    border: 0.3vw solid rgb(43, 175, 236);
+    border: 0.3vw solid cornflowerblue;
 
 }
 
 #fr1:target~.control-block .control .anchor-2 .button .blue-btn {
 
-    width: 0;
-    height: 0;
-    border: .6vw solid rgb(43, 175, 236);
+   width: 1.1vw;
+    height: 1.1vw;
     border-radius: 1.1vw;
+    background-color: cornflowerblue;
     margin-left: .4vw;
     margin-top: 1.2vw;
 
@@ -272,10 +257,10 @@
 
 #fr1:target~.control-block .control .anchor-3 .button .blue-btn {
 
-    width: 0;
-    height: 0;
-    border: .6vw solid rgb(43, 175, 236);
+   width: 1.1vw;
+    height: 1.1vw;
     border-radius: 1.1vw;
+    background-color: cornflowerblue;
     margin-left: .4vw;
     margin-top: 1.2vw;
 
@@ -283,13 +268,12 @@
 
 #fr1:target~.control-block .control .anchor-4 .button .blue-btn {
 
-    width: 0;
-    height: 0;
-    border: .6vw solid rgb(43, 175, 236);
+   width: 1.1vw;
+    height: 1.1vw;
     border-radius: 1.1vw;
+    background-color: cornflowerblue;
     margin-left: .4vw;
     margin-top: 1.2vw;
-
 }
 
 #fr2:target~.control-block .control .anchor-2 .button .blue-btn {
@@ -297,27 +281,25 @@
     width: .6vw;
     height: .6vw;
     background-color: transparent;
-    border: 0.3vw solid rgb(43, 175, 236);
+    border: 0.3vw solid cornflowerblue;
 
 }
 
 #fr2:target~.control-block .control .anchor-1 .button .blue-btn {
-
-    width: 0;
-    height: 0;
-    border: .6vw solid rgb(43, 175, 236);
+    width: 1.1vw;
+    height: 1.1vw;
     border-radius: 1.1vw;
+    background-color: cornflowerblue;
     margin-left: .4vw;
     margin-top: 1.2vw;
-
 }
 
 #fr2:target~.control-block .control .anchor-3 .button .blue-btn {
 
-    width: 0;
-    height: 0;
-    border: .6vw solid rgb(43, 175, 236);
+    width: 1.1vw;
+    height: 1.1vw;
     border-radius: 1.1vw;
+    background-color: cornflowerblue;
     margin-left: .4vw;
     margin-top: 1.2vw;
 
@@ -325,10 +307,10 @@
 
 #fr2:target~.control-block .control .anchor-4 .button .blue-btn {
 
-    width: 0;
-    height: 0;
-    border: .6vw solid rgb(43, 175, 236);
+    width: 1.1vw;
+    height: 1.1vw;
     border-radius: 1.1vw;
+    background-color: cornflowerblue;
     margin-left: .4vw;
     margin-top: 1.2vw;
 
@@ -339,27 +321,26 @@
     width: .6vw;
     height: .6vw;
     background-color: transparent;
-    border: 0.3vw solid rgb(43, 175, 236);
+    border: 0.3vw solid cornflowerblue;
 
 }
 
 #fr3:target~.control-block .control .anchor-1 .button .blue-btn {
 
-    width: 0;
-    height: 0;
-    border: .6vw solid rgb(43, 175, 236);
+    width: 1.1vw;
+    height: 1.1vw;
     border-radius: 1.1vw;
+    background-color: cornflowerblue;
     margin-left: .4vw;
     margin-top: 1.2vw;
 
 }
 
 #fr3:target~.control-block .control .anchor-2 .button .blue-btn {
-
-    width: 0;
-    height: 0;
-    border: .6vw solid rgb(43, 175, 236);
+    width: 1.1vw;
+    height: 1.1vw;
     border-radius: 1.1vw;
+    background-color: cornflowerblue;
     margin-left: .4vw;
     margin-top: 1.2vw;
 
@@ -367,10 +348,10 @@
 
 #fr3:target~.control-block .control .anchor-4 .button .blue-btn {
 
-    width: 0;
-    height: 0;
-    border: .6vw solid rgb(43, 175, 236);
+    width: 1.1vw;
+    height: 1.1vw;
     border-radius: 1.1vw;
+    background-color: cornflowerblue;
     margin-left: .4vw;
     margin-top: 1.2vw;
 
@@ -381,27 +362,25 @@
     width: .6vw;
     height: .6vw;
     background-color: transparent;
-    border: 0.3vw solid rgb(43, 175, 236);
+    border: 0.3vw solid cornflowerblue;
 
 }
 
 #fr4:target~.control-block .control .anchor-1 .button .blue-btn {
 
-    width: 0;
-    height: 0;
-    border: .6vw solid rgb(43, 175, 236);
+    width: 1.1vw;
+    height: 1.1vw;
     border-radius: 1.1vw;
+    background-color: cornflowerblue;
     margin-left: .4vw;
     margin-top: 1.2vw;
-
+        
 }
-
 #fr4:target~.control-block .control .anchor-3 .button .blue-btn {
-
-    width: 0;
-    height: 0;
-    border: .6vw solid rgb(43, 175, 236);
+    width: 1.1vw;
+    height: 1.1vw;
     border-radius: 1.1vw;
+    background-color: cornflowerblue;
     margin-left: .4vw;
     margin-top: 1.2vw;
 
@@ -409,25 +388,108 @@
 
 #fr4:target~.control-block .control .anchor-2 .button .blue-btn {
 
-    width: 0;
-    height: 0;
-    border: .6vw solid rgb(43, 175, 236);
+    width: 1.1vw;
+    height: 1.1vw;
     border-radius: 1.1vw;
+    background-color: cornflowerblue;
     margin-left: .4vw;
     margin-top: 1.2vw;
 
 }
-*/
+
+
+
+
+#fr1:target~.control-block .control .anchor-1 .button:hover .blue-btn{
+
+    border: 0.3vw solid #fff;
+}
+
+#fr1:target~.control-block .control .anchor-2 .button:hover .blue-btn{
+
+   background-color: #fff;
+}
+
+#fr1:target~.control-block .control .anchor-3 .button:hover .blue-btn{
+
+    background-color: #fff;
+}
+
+#fr1:target~.control-block .control .anchor-4 .button:hover .blue-btn{
+
+    background-color: #fff;
+}
+#fr2:target~.control-block .control .anchor-2 .button:hover .blue-btn{
+
+    border: 0.3vw solid #fff;
+}
+
+#fr2:target~.control-block .control .anchor-1 .button:hover .blue-btn{
+
+   background-color: #fff;
+}
+
+#fr2:target~.control-block .control .anchor-3 .button:hover .blue-btn{
+
+    background-color: #fff;
+}
+
+#fr2:target~.control-block .control .anchor-4 .button:hover .blue-btn{
+
+    background-color: #fff;
+}
+#fr3:target~.control-block .control .anchor-3 .button:hover .blue-btn{
+
+    border: 0.3vw solid #fff;
+}
+
+#fr3:target~.control-block .control .anchor-2 .button:hover .blue-btn{
+
+   background-color: #fff;
+}
+
+#fr3:target~.control-block .control .anchor-1 .button:hover .blue-btn{
+
+    background-color: #fff;
+}
+
+#fr3:target~.control-block .control .anchor-4 .button:hover .blue-btn{
+
+    background-color: #fff;
+}
+#fr4:target~.control-block .control .anchor-4 .button:hover .blue-btn{
+
+    border: 0.3vw solid #fff;
+}
+
+#fr4:target~.control-block .control .anchor-2 .button:hover .blue-btn{
+
+   background-color: #fff;
+}
+
+#fr4:target~.control-block .control .anchor-3 .button:hover .blue-btn{
+
+    background-color: #fff;
+}
+
+#fr4:target~.control-block .control .anchor-1 .button:hover .blue-btn{
+    
+    background-color: #fff;
+}
+
 .control-block {
 
-    background-color: blueviolet;
+
     height: 9.57vw;
     margin-top: 3vw;
 }
-
+.text-wrapper{
+    background-color: #000;
+}
 .text {
     display: inline-block;
-    background-color: azure;
+    background-color: #000;
+    color: #fff;
     width: 50vw;
     height: 4vw;
     font-size: 3.5vw;
@@ -441,7 +503,7 @@
 .control {
 
     display: inline-flex;
-    background-color: antiquewhite;
+
     width: 8.05vw;
     height: 3.5vw;
     margin-left: 26.9vw;
@@ -459,23 +521,28 @@
 }
 
 .blue-btn {
-    width: 0;
-    height: 0;
-    border: .6vw solid rgb(43, 175, 236);
+    width: 1.1vw;
+    height: 1.1vw;
     border-radius: 1.1vw;
+    background-color: cornflowerblue;
     margin-left: .4vw;
     margin-top: 1.2vw;
 
 }
 
-.btn-1 .blue-btn {
+/*.btn-1 .blue-btn {
     width: .6vw;
     height: .6vw;
     background-color: transparent;
-    border: 0.3vw solid rgb(43, 175, 236);
+    border: 0.3vw solid cornflowerblue;
 
-}
-
+}*/
+ .button:hover .blue-btn{
+     background-color: #fff;
+ }
+ .anchor-1:hover .blue-btn {
+     background-color: #fff;
+ }
 
 
 @media screen and (max-width:720px) {
@@ -516,7 +583,7 @@
 
         to {
             opacity: 1;
-            transform: translateX(-162vw);
+            transform: translateX(-161vw);
 
 
         }
@@ -573,6 +640,7 @@
         grid-template-areas:
             ". . ."
             " ctrl . ."
+            ". . ."
             "txt . ."
             ". . ."
             ". . .";
@@ -583,7 +651,7 @@
     .text {
 
         grid-area: txt;
-        background-color: azure;
+    
         width: 60vw;
         height: 4vw;
         font-size: 3.5vw;
@@ -605,21 +673,24 @@
 
     }
 
+
     .blue-btn {
-        width: 0vw;
-        height: 0vw;
-        border-radius: 3vw;
-        border: 1.4vw solid rgb(43, 175, 236);
+        width: 2.8vw;
+        height: 2.8vw;
+        border-radius: 1.8vw;
+        background-color: cornflowerblue;
         margin-left: .8vw;
         margin-top: 2.6vw;
+    
     }
-
-    .btn-1 .blue-btn {
+    
+   /* .btn-1 .blue-btn {
         width: 1.8vw;
         height: 1.8vw;
         background-color: transparent;
-        border: 0.5vw solid rgb(43, 175, 236);
-    }
+        border: 0.5vw solid cornflowerblue;
+    
+    }*/
 
     #fr1:target~.screen .inside {
         position: relative;
@@ -639,7 +710,7 @@
         position: relative;
         animation: fr3-slide 1s;
         animation-timing-function: ease-in-out;
-        transform: translateX(-162vw);
+        transform: translateX(-161vw);
 
 
     }
@@ -658,7 +729,7 @@
         width: 1.8vw;
         height: 1.8vw;
         background-color: transparent;
-        border: 0.5vw solid rgb(43, 175, 236);
+        border: 0.5vw solid cornflowerblue;
 
     }
 
@@ -667,7 +738,7 @@
         width: 0vw;
         height: 0vw;
         border-radius: 3vw;
-        border: 1.4vw solid rgb(43, 175, 236);
+        border: 1.4vw solid cornflowerblue;
         margin-left: .8vw;
         margin-top: 2.6vw;
 
@@ -678,7 +749,7 @@
         width: 0vw;
         height: 0vw;
         border-radius: 3vw;
-        border: 1.4vw solid rgb(43, 175, 236);
+        border: 1.4vw solid cornflowerblue;
         margin-left: .8vw;
         margin-top: 2.6vw;
 
@@ -689,7 +760,7 @@
         width: 0vw;
         height: 0vw;
         border-radius: 3vw;
-        border: 1.4vw solid rgb(43, 175, 236);
+        border: 1.4vw solid cornflowerblue;
         margin-left: .8vw;
         margin-top: 2.6vw;
 
@@ -700,7 +771,7 @@
         width: 1.8vw;
         height: 1.8vw;
         background-color: transparent;
-        border: 0.5vw solid rgb(43, 175, 236);
+        border: 0.5vw solid cornflowerblue;
     }
 
     #fr2:target~.control-block .control .anchor-1 .button .blue-btn {
@@ -708,7 +779,7 @@
         width: 0vw;
         height: 0vw;
         border-radius: 3vw;
-        border: 1.4vw solid rgb(43, 175, 236);
+        border: 1.4vw solid cornflowerblue;
         margin-left: .8vw;
         margin-top: 2.6vw;
 
@@ -719,7 +790,7 @@
         width: 0vw;
         height: 0vw;
         border-radius: 3vw;
-        border: 1.4vw solid rgb(43, 175, 236);
+        border: 1.4vw solid cornflowerblue;
         margin-left: .8vw;
         margin-top: 2.6vw;
 
@@ -730,7 +801,7 @@
         width: 0vw;
         height: 0vw;
         border-radius: 3vw;
-        border: 1.4vw solid rgb(43, 175, 236);
+        border: 1.4vw solid cornflowerblue;
         margin-left: .8vw;
         margin-top: 2.6vw;
 
@@ -741,7 +812,7 @@
         width: 1.8vw;
         height: 1.8vw;
         background-color: transparent;
-        border: 0.5vw solid rgb(43, 175, 236);
+        border: 0.5vw solid cornflowerblue;
 
     }
 
@@ -750,7 +821,7 @@
         width: 0vw;
         height: 0vw;
         border-radius: 3vw;
-        border: 1.4vw solid rgb(43, 175, 236);
+        border: 1.4vw solid cornflowerblue;
         margin-left: .8vw;
         margin-top: 2.6vw;
 
@@ -761,7 +832,7 @@
         width: 0vw;
         height: 0vw;
         border-radius: 3vw;
-        border: 1.4vw solid rgb(43, 175, 236);
+        border: 1.4vw solid cornflowerblue;
         margin-left: .8vw;
         margin-top: 2.6vw;
 
@@ -772,7 +843,7 @@
         width: 0vw;
         height: 0vw;
         border-radius: 3vw;
-        border: 1.4vw solid rgb(43, 175, 236);
+        border: 1.4vw solid cornflowerblue;
         margin-left: .8vw;
         margin-top: 2.6vw;
     }
@@ -782,7 +853,7 @@
         width: 1.8vw;
         height: 1.8vw;
         background-color: transparent;
-        border: 0.5vw solid rgb(43, 175, 236);
+        border: 0.5vw solid cornflowerblue;
 
     }
 
@@ -791,7 +862,7 @@
         width: 0vw;
         height: 0vw;
         border-radius: 3vw;
-        border: 1.4vw solid rgb(43, 175, 236);
+        border: 1.4vw solid cornflowerblue;
         margin-left: .8vw;
         margin-top: 2.6vw;
 
@@ -802,7 +873,7 @@
         width: 0vw;
         height: 0vw;
         border-radius: 3vw;
-        border: 1.4vw solid rgb(43, 175, 236);
+        border: 1.4vw solid cornflowerblue;
         margin-left: .8vw;
         margin-top: 2.6vw;
 
@@ -813,9 +884,123 @@
         width: 0vw;
         height: 0vw;
         border-radius: 3vw;
-        border: 1.4vw solid rgb(43, 175, 236);
+        border: 1.4vw solid cornflowerblue;
         margin-left: .8vw;
         margin-top: 2.6vw;
 
     }
+    #fr1:target~.control-block .control .anchor-1 .button:hover .blue-btn{
+
+        border: 0.5vw solid #fff;
+    }
+    
+    #fr1:target~.control-block .control .anchor-2 .button:hover .blue-btn{
+        width: 2.8vw;
+        height: 2.8vw;
+        border-radius: 1.8vw;
+       background-color: #fff;
+       border: none;
+    }
+    
+    #fr1:target~.control-block .control .anchor-3 .button:hover .blue-btn{
+        width: 2.8vw;
+        height: 2.8vw;
+        border-radius: 1.8vw;
+        border: none;
+        background-color: #fff;
+    }
+    
+    #fr1:target~.control-block .control .anchor-4 .button:hover .blue-btn{
+        width: 2.8vw;
+        height: 2.8vw;
+        border-radius: 1.8vw;
+        border: none;
+        background-color: #fff;
+    }
+    #fr2:target~.control-block .control .anchor-2 .button:hover .blue-btn{
+    
+        border: 0.5vw solid #fff;
+    }
+    
+    #fr2:target~.control-block .control .anchor-1 .button:hover .blue-btn{
+        width: 2.8vw;
+        height: 2.8vw;
+        border-radius: 1.8vw;
+        border: none;
+       background-color: #fff;
+    }
+    
+    #fr2:target~.control-block .control .anchor-3 .button:hover .blue-btn{
+        width: 2.8vw;
+        height: 2.8vw;
+        border-radius: 1.8vw;
+        border: none;
+        background-color: #fff;
+    }
+    
+    #fr2:target~.control-block .control .anchor-4 .button:hover .blue-btn{
+        width: 2.8vw;
+        height: 2.8vw;
+        border-radius: 1.8vw;
+        border: none;
+        background-color: #fff;
+    }
+    #fr3:target~.control-block .control .anchor-3 .button:hover .blue-btn{
+    
+        border: 0.5vw solid #fff;
+    }
+    
+    #fr3:target~.control-block .control .anchor-2 .button:hover .blue-btn{
+        width: 2.8vw;
+        height: 2.8vw;
+        border-radius: 1.8vw;
+        border: none;
+       background-color: #fff;
+    }
+    
+    #fr3:target~.control-block .control .anchor-1 .button:hover .blue-btn{
+        width: 2.8vw;
+        height: 2.8vw;
+        border-radius: 1.8vw;
+        border: none;
+        background-color: #fff;
+    }
+    
+    #fr3:target~.control-block .control .anchor-4 .button:hover .blue-btn{
+        width: 2.8vw;
+        height: 2.8vw;
+        border-radius: 1.8vw;
+        border: none;
+        background-color: #fff;
+    }
+    #fr4:target~.control-block .control .anchor-4 .button:hover .blue-btn{
+    
+        border: 0.5vw solid #fff;
+    }
+    
+    #fr4:target~.control-block .control .anchor-2 .button:hover .blue-btn{
+        width: 2.8vw;
+        height: 2.8vw;
+        border-radius: 1.8vw;
+        border: none;
+       background-color: #fff;
+    }
+    
+    #fr4:target~.control-block .control .anchor-3 .button:hover .blue-btn{
+        width: 2.8vw;
+        height: 2.8vw;
+        border-radius: 1.8vw;
+        border: none;
+        background-color: #fff;
+    }
+    
+    #fr4:target~.control-block .control .anchor-1 .button:hover .blue-btn{
+        width: 2.8vw;
+        height: 2.8vw;
+        border-radius: 1.8vw;
+        border: none;
+        background-color: #fff;
+    }
+    
+    
 }
