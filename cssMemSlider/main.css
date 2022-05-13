@@ -61,12 +61,12 @@
 @keyframes fr1-slide {
     from {
         opacity: 0;
-        transform: translateX(-256.95vw);
+        transform: translateX(-256.95vw) ;
     }
 
     to {
         opacity: 1;
-        transform: translateX(0vw);
+        transform: translateX(0vw) ;
 
 
     }
@@ -183,13 +183,13 @@ body{
 
 #fr1:target~.screen .inside {
     position: relative;
-    animation: fr1-slide 1.5s;
-    animation-timing-function: ease-in-out;
+    animation: fr1-slide 3s;
+    animation-timing-function:ease-in-out;
 }
 
 #fr2:target~.screen .inside {
     position: relative;
-    animation: fr2-slide .5s;
+    animation: fr2-slide 1s;
     animation-timing-function: ease-in-out;
     transform: translateX(-85.65vw);
 
@@ -197,7 +197,7 @@ body{
 
 #fr3:target~.screen .inside {
     position: relative;
-    animation: fr3-slide 1s;
+    animation: fr3-slide 2s;
     animation-timing-function: ease-in-out;
     transform: translateX(-171.3vw);
 
@@ -205,7 +205,7 @@ body{
 
 #fr4:target~.screen .inside {
     position: relative;
-    animation: fr4-slide 1.5s;
+    animation: fr4-slide 3s;
     animation-timing-function: ease-in-out;
     transform: translateX(-256.95vw);
 
@@ -213,28 +213,28 @@ body{
 
 #fr1:target~.control-block .text .text-wrapper {
     position: relative;
-    animation: text-slide1 1.5s;
+    animation: text-slide1 3s;
     animation-timing-function: ease-in-out;
     transform: translateY(-0vw);
 }
 
 #fr2:target~.control-block .text .text-wrapper {
     position: relative;
-    animation: text-slide2 .5s;
+    animation: text-slide2 1s;
     animation-timing-function: ease-in-out;
     transform: translateY(-4vw);
 }
 
 #fr3:target~.control-block .text .text-wrapper {
     position: relative;
-    animation: text-slide3 1s;
+    animation: text-slide3 2s;
     animation-timing-function: ease-in-out;
     transform: translateY(-8vw);
 }
 
 #fr4:target~.control-block .text .text-wrapper {
     position: relative;
-    animation: text-slide4 1.5s;
+    animation: text-slide4 3s;
     animation-timing-function: ease-in-out;
     transform: translateY(-12vw);
 }
@@ -683,13 +683,13 @@ body{
     
     #fr1:target~.screen .inside {
         position: relative;
-        animation: fr1-slide 1.5s;
+        animation: fr1-slide 3s;
         animation-timing-function: ease-in-out;
     }
 
     #fr2:target~.screen .inside {
         position: relative;
-        animation: fr2-slide .5s;
+        animation: fr2-slide 1s;
         animation-timing-function: ease-in-out;
         transform: translateX(-80vw);
 
@@ -697,7 +697,7 @@ body{
 
     #fr3:target~.screen .inside {
         position: relative;
-        animation: fr3-slide 1s;
+        animation: fr3-slide 2s;
         animation-timing-function: ease-in-out;
         transform: translateX(-160vw);
 
@@ -706,7 +706,7 @@ body{
 
     #fr4:target~.screen .inside {
         position: relative;
-        animation: fr4-slide 1.5s;
+        animation: fr4-slide 3s;
         animation-timing-function: ease-in-out;
         transform: translateX(-240vw);
 
@@ -1001,4 +1001,474 @@ body{
         background-color: #fff;
     }
 
+
+}
+
+@media screen and (min-width:1681px){
+    @keyframes text-slide1 {
+        from {
+            opacity: 0.7;
+            filter: blur(1vw);
+            transform: translateY(-12.8vw);
+        }
+    
+        to {
+            opacity: 1;
+            filter: blur(0px);
+            transform: translateY(0vw);
+    
+        }
+    }
+    
+    @keyframes text-slide2 {
+        from {
+            opacity: 0.7;
+            filter: blur(1vw);
+            transform: translateY(0vw);
+        }
+    
+        to {
+            opacity: 1;
+            filter: blur(0px);
+            transform: translateY(-3.2vw);
+    
+        }
+    }
+    
+    @keyframes text-slide3 {
+        from {
+            opacity: 0.7;
+            filter: blur(1vw);
+            transform: translateY(0vw);
+        }
+    
+        to {
+            opacity: 1;
+            filter: blur(0px);
+            transform: translateY(-6.4vw);
+    
+        }
+    }
+    
+    @keyframes text-slide4 {
+        from {
+            opacity: 0.7;
+            filter: blur(1vw);
+            transform: translateY(0vw);
+        }
+    
+        to {
+            opacity: 1;
+            filter: blur(0px);
+            transform: translateY(-9.6vw);
+    
+        }
+    }
+    
+    @keyframes fr1-slide {
+        from {
+            opacity: 0;
+            transform: translateX(-205.56vw) ;
+        }
+    
+        to {
+            opacity: 1;
+            transform: translateX(0vw) ;
+    
+    
+        }
+    }
+    
+    @keyframes fr2-slide {
+        from {
+            opacity: 0;
+            transform: translateX(0vw);
+        }
+    
+        to {
+            opacity: 1;
+            transform: translateX(-68.52vw);
+    
+    
+        }
+    }
+    
+    @keyframes fr3-slide {
+        from {
+            opacity: 0;
+            transform: translateX(-0vw);
+        }
+    
+        to {
+            opacity: 1;
+            transform: translateX(-137.04vw);
+    
+    
+        }
+    }
+    
+    @keyframes fr4-slide {
+        from {
+            opacity: 0;
+            transform: translateX(0vw);
+        }
+    
+        to {
+            opacity: 1;
+            transform: translateX(-205.56vw);
+    
+    
+        }
+    }
+   
+    .container {
+        width: 72vw;
+        height: 41.36vw;
+        background-color: #000;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: .8vw;
+        padding-top: 1.04vw;
+        box-shadow: .8vw .8vw 4vw ;
+    
+    }
+    
+    .wrapper {
+        width: 68.52vw;
+        height: 41.36vw;
+        margin-left: auto;
+        margin-right: auto;
+        white-space: nowrap;
+    
+    }
+    
+    .screen {
+    
+    
+        height: 31.304vw;
+        border-radius: 1.2vw;
+        white-space: nowrap;
+        overflow: hidden;
+    
+    }
+    
+    .frame {
+        display: inline-block;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #fff;
+        width: 68.52vw;
+        height: 31.304vw;
+    }
+    
+    .inside {
+        font-size: 0vw;
+    }
+    
+  
+    
+    #fr1:target~.screen .inside {
+        position: relative;
+        animation: fr1-slide 3s;
+        animation-timing-function:ease-in-out;
+    }
+    
+    #fr2:target~.screen .inside {
+        position: relative;
+        animation: fr2-slide 1s;
+        animation-timing-function: ease-in-out;
+        transform: translateX(-68.52vw);
+    
+    }
+    
+    #fr3:target~.screen .inside {
+        position: relative;
+        animation: fr3-slide 2s;
+        animation-timing-function: ease-in-out;
+        transform: translateX(-137.04vw);
+    
+    }
+    
+    #fr4:target~.screen .inside {
+        position: relative;
+        animation: fr4-slide 3s;
+        animation-timing-function: ease-in-out;
+        transform: translateX(-205.56vw);
+    
+    }
+    
+    #fr1:target~.control-block .text .text-wrapper {
+        position: relative;
+        animation: text-slide1 3s;
+        animation-timing-function: ease-in-out;
+        transform: translateY(-0vw);
+    }
+    
+    #fr2:target~.control-block .text .text-wrapper {
+        position: relative;
+        animation: text-slide2 1s;
+        animation-timing-function: ease-in-out;
+        transform: translateY(-3.2vw);
+    }
+    
+    #fr3:target~.control-block .text .text-wrapper {
+        position: relative;
+        animation: text-slide3 2s;
+        animation-timing-function: ease-in-out;
+        transform: translateY(-6.4vw);
+    }
+    
+    #fr4:target~.control-block .text .text-wrapper {
+        position: relative;
+        animation: text-slide4 3s;
+        animation-timing-function: ease-in-out;
+        transform: translateY(-9.6vw);
+    }
+    
+    #fr1:target~.control-block .control .anchor-1 .button .blue-btn {
+    
+        width: .48vw;
+        height: .48vw;
+        background-color: transparent;
+        border: 0.24vw solid cornflowerblue;
+        margin-top: .896vw;
+    
+    
+    }
+    
+    #fr1:target~.control-block .control .anchor-2 .button .blue-btn {
+    
+        width: .88vw;
+        height: .88vw;
+        border-radius: .88vw;
+        background-color: cornflowerblue;
+        margin-left: .32vw;
+        margin-top: .96vw;
+    
+    }
+    
+    #fr1:target~.control-block .control .anchor-3 .button .blue-btn {
+    
+        width: .88vw;
+        height: .88vw;
+        border-radius: .88vw;
+        background-color: cornflowerblue;
+        margin-left: .32vw;
+        margin-top: .96vw;
+    }
+    
+    #fr1:target~.control-block .control .anchor-4 .button .blue-btn {
+    
+        width: .88vw;
+        height: .88vw;
+        border-radius: .88vw;
+        background-color: cornflowerblue;
+        margin-left: .32vw;
+        margin-top: .96vw;
+    }
+    
+    #fr2:target~.control-block .control .anchor-2 .button .blue-btn {
+    
+        width: .48vw;
+        height: .48vw;
+        background-color: transparent;
+        border: 0.24vw solid cornflowerblue;
+        margin-top: .896vw;
+    
+    }
+    
+    #fr2:target~.control-block .control .anchor-1 .button .blue-btn {
+        width: .88vw;
+        height: .88vw;
+        border-radius: .88vw;
+        background-color: cornflowerblue;
+        margin-left: .32vw;
+        margin-top: .96vw;
+    }
+    
+    #fr2:target~.control-block .control .anchor-3 .button .blue-btn {
+    
+        width: .88vw;
+        height: .88vw;
+        border-radius: .88vw;
+        background-color: cornflowerblue;
+        margin-left: .32vw;
+        margin-top: .96vw;
+    
+    }
+    
+    #fr2:target~.control-block .control .anchor-4 .button .blue-btn {
+    
+        width: .88vw;
+        height: .88vw;
+        border-radius: .88vw;
+        background-color: cornflowerblue;
+        margin-left: .32vw;
+        margin-top: .96vw;
+    }
+    
+    #fr3:target~.control-block .control .anchor-3 .button .blue-btn {
+    
+        width: .48vw;
+        height: .48vw;
+        background-color: transparent;
+        border: 0.24vw solid cornflowerblue;
+        margin-top: .896vw;
+    
+    }
+    
+    #fr3:target~.control-block .control .anchor-1 .button .blue-btn {
+    
+        width: .88vw;
+        height: .88vw;
+        border-radius: .88vw;
+        background-color: cornflowerblue;
+        margin-left: .32vw;
+        margin-top: .96vw;
+    
+    }
+    
+    #fr3:target~.control-block .control .anchor-2 .button .blue-btn {
+        width: .88vw;
+        height: .88vw;
+        border-radius: .88vw;
+        background-color: cornflowerblue;
+        margin-left: .32vw;
+        margin-top: .96vw;
+    
+    }
+    
+    #fr3:target~.control-block .control .anchor-4 .button .blue-btn {
+    
+        width: .88vw;
+        height: .88vw;
+        border-radius: .88vw;
+        background-color: cornflowerblue;
+        margin-left: .32vw;
+        margin-top: .96vw;
+    }
+    
+    #fr4:target~.control-block .control .anchor-4 .button .blue-btn {
+    
+        width: .48vw;
+        height: .48vw;
+        background-color: transparent;
+        border: 0.24vw solid cornflowerblue;
+        margin-top: .896vw;
+    
+    }
+    
+    #fr4:target~.control-block .control .anchor-1 .button .blue-btn {
+    
+        width: .88vw;
+        height: .88vw;
+        border-radius: .88vw;
+        background-color: cornflowerblue;
+        margin-left: .32vw;
+        margin-top: .96vw;
+    }
+    
+    #fr4:target~.control-block .control .anchor-3 .button .blue-btn {
+        width: .88vw;
+        height: .88vw;
+        border-radius: .88vw;
+        background-color: cornflowerblue;
+        margin-left: .32vw;
+        margin-top: .96vw;
+    }
+    
+    #fr4:target~.control-block .control .anchor-2 .button .blue-btn {
+    
+        width: .88vw;
+        height: .88vw;
+        border-radius: .88vw;
+        background-color: cornflowerblue;
+        margin-left: .32vw;
+        margin-top: .96vw;
+    
+    }
+    
+    #fr1:target~.control-block .control .anchor-1 .button:hover .blue-btn {
+    
+        border: 0.24vw solid #fff;
+    }
+    
+    
+    
+    #fr2:target~.control-block .control .anchor-2 .button:hover .blue-btn {
+    
+        border: 0.24vw solid #fff;
+    }
+    
+    
+    
+    #fr3:target~.control-block .control .anchor-3 .button:hover .blue-btn {
+    
+        border: 0.24vw solid #fff;
+    }
+    
+ 
+    
+    #fr4:target~.control-block .control .anchor-4 .button:hover .blue-btn {
+    
+        border: 0.24vw solid #fff;
+    }
+    
+  
+    
+    .control-block {
+    
+        height: 7.656vw;
+        margin-top: 2.4vw;
+    }
+    
+    
+    
+    .text {
+        display: inline-block;
+        color: #fff;
+        height: 3.2vw;
+        width: 48vw;
+        font-size: 2.8vw;
+        overflow: hidden;
+        vertical-align: top;
+    }
+    
+    .control {
+    
+        display: inline-flex;
+        width: 6.44vw;
+        height: 2.8vw;
+        margin-left: 13.52vw;
+        margin-right: auto;
+        vertical-align: top;
+        white-space: nowrap;
+      
+        
+    }
+    
+    .button {
+        display: inline-flex;
+        height: 2.8vw;
+        width: 1.48vw;
+       
+        
+    
+    }
+    
+    .blue-btn {
+        width: .88vw;
+        height: .88vw;
+        border-radius: .88vw;
+        background-color: cornflowerblue;
+        margin-left: .32vw;
+        margin-top: .96vw;
+        transition: background-color 400ms;
+    
+    }
+    
+  
+    
+    
 }
