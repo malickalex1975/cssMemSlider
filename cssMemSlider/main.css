@@ -1,7 +1,7 @@
 @keyframes text-slide1 {
     from {
-        opacity: 0.5;
-        filter: blur(2vw);
+        opacity: 0.7;
+        filter: blur(1vw);
         transform: translateY(-16vw);
     }
 
@@ -15,8 +15,8 @@
 
 @keyframes text-slide2 {
     from {
-        opacity: 0.5;
-        filter: blur(2vw);
+        opacity: 0.7;
+        filter: blur(1vw);
         transform: translateY(0vw);
     }
 
@@ -30,8 +30,8 @@
 
 @keyframes text-slide3 {
     from {
-        opacity: 0.5;
-        filter: blur(2vw);
+        opacity: 0.7;
+        filter: blur(1vw);
         transform: translateY(0vw);
     }
 
@@ -45,8 +45,8 @@
 
 @keyframes text-slide4 {
     from {
-        opacity: 0.5;
-        filter: blur(2vw);
+        opacity: 0.7;
+        filter: blur(1vw);
         transform: translateY(0vw);
     }
 
@@ -80,7 +80,7 @@
 
     to {
         opacity: 1;
-        transform: translateX(-86vw);
+        transform: translateX(-85.65vw);
 
 
     }
@@ -94,7 +94,7 @@
 
     to {
         opacity: 1;
-        transform: translateX(-172vw);
+        transform: translateX(-171.3vw);
 
 
     }
@@ -108,14 +108,14 @@
 
     to {
         opacity: 1;
-        transform: translateX(-258vw);
+        transform: translateX(-256.95vw);
 
 
     }
 }
-
-
-
+body{
+    background-image: linear-gradient(to right, #ffffff ,#cccccc);
+}
 .container {
     width: 90vw;
     height: 51.7vw;
@@ -124,6 +124,7 @@
     margin-right: auto;
     margin-top: 1vw;
     padding-top: 1.3vw;
+    box-shadow: 1vw 1vw 5vw ;
 
 }
 
@@ -138,7 +139,7 @@
 
 .screen {
 
-    
+
     height: 39.13vw;
     border-radius: 1.5vw;
     white-space: nowrap;
@@ -156,14 +157,17 @@
     height: 39.13vw;
 }
 
+.inside {
+    font-size: 0vw;
+}
 
 .frame-1 {
-    
+
     background-image: url("assets/move-div.jpg");
 }
 
 .frame-2 {
-   
+
     background-image: url("assets/looks-n-written.jpg");
 }
 
@@ -187,7 +191,7 @@
     position: relative;
     animation: fr2-slide .5s;
     animation-timing-function: ease-in-out;
-    transform: translateX(-86vw);
+    transform: translateX(-85.65vw);
 
 }
 
@@ -195,7 +199,7 @@
     position: relative;
     animation: fr3-slide 1s;
     animation-timing-function: ease-in-out;
-    transform: translateX(-172vw);
+    transform: translateX(-171.3vw);
 
 }
 
@@ -203,7 +207,7 @@
     position: relative;
     animation: fr4-slide 1.5s;
     animation-timing-function: ease-in-out;
-    transform: translateX(-258vw);
+    transform: translateX(-256.95vw);
 
 }
 
@@ -241,12 +245,14 @@
     height: .6vw;
     background-color: transparent;
     border: 0.3vw solid cornflowerblue;
+    margin-top: 1.12vw;
+
 
 }
 
 #fr1:target~.control-block .control .anchor-2 .button .blue-btn {
 
-   width: 1.1vw;
+    width: 1.1vw;
     height: 1.1vw;
     border-radius: 1.1vw;
     background-color: cornflowerblue;
@@ -257,7 +263,7 @@
 
 #fr1:target~.control-block .control .anchor-3 .button .blue-btn {
 
-   width: 1.1vw;
+    width: 1.1vw;
     height: 1.1vw;
     border-radius: 1.1vw;
     background-color: cornflowerblue;
@@ -268,7 +274,7 @@
 
 #fr1:target~.control-block .control .anchor-4 .button .blue-btn {
 
-   width: 1.1vw;
+    width: 1.1vw;
     height: 1.1vw;
     border-radius: 1.1vw;
     background-color: cornflowerblue;
@@ -282,6 +288,8 @@
     height: .6vw;
     background-color: transparent;
     border: 0.3vw solid cornflowerblue;
+    margin-top: 1.12vw;
+
 
 }
 
@@ -322,6 +330,7 @@
     height: .6vw;
     background-color: transparent;
     border: 0.3vw solid cornflowerblue;
+    margin-top: 1.12vw;
 
 }
 
@@ -363,6 +372,7 @@
     height: .6vw;
     background-color: transparent;
     border: 0.3vw solid cornflowerblue;
+    margin-top: 1.12vw;
 
 }
 
@@ -374,8 +384,9 @@
     background-color: cornflowerblue;
     margin-left: .4vw;
     margin-top: 1.2vw;
-        
+
 }
+
 #fr4:target~.control-block .control .anchor-3 .button .blue-btn {
     width: 1.1vw;
     height: 1.1vw;
@@ -397,119 +408,117 @@
 
 }
 
-
-
-
-#fr1:target~.control-block .control .anchor-1 .button:hover .blue-btn{
+#fr1:target~.control-block .control .anchor-1 .button:hover .blue-btn {
 
     border: 0.3vw solid #fff;
 }
 
-#fr1:target~.control-block .control .anchor-2 .button:hover .blue-btn{
-
-   background-color: #fff;
-}
-
-#fr1:target~.control-block .control .anchor-3 .button:hover .blue-btn{
+#fr1:target~.control-block .control .anchor-2 .button:hover .blue-btn {
 
     background-color: #fff;
 }
 
-#fr1:target~.control-block .control .anchor-4 .button:hover .blue-btn{
+#fr1:target~.control-block .control .anchor-3 .button:hover .blue-btn {
 
     background-color: #fff;
 }
-#fr2:target~.control-block .control .anchor-2 .button:hover .blue-btn{
+
+#fr1:target~.control-block .control .anchor-4 .button:hover .blue-btn {
+
+    background-color: #fff;
+}
+
+#fr2:target~.control-block .control .anchor-2 .button:hover .blue-btn {
 
     border: 0.3vw solid #fff;
 }
 
-#fr2:target~.control-block .control .anchor-1 .button:hover .blue-btn{
-
-   background-color: #fff;
-}
-
-#fr2:target~.control-block .control .anchor-3 .button:hover .blue-btn{
+#fr2:target~.control-block .control .anchor-1 .button:hover .blue-btn {
 
     background-color: #fff;
 }
 
-#fr2:target~.control-block .control .anchor-4 .button:hover .blue-btn{
+#fr2:target~.control-block .control .anchor-3 .button:hover .blue-btn {
 
     background-color: #fff;
 }
-#fr3:target~.control-block .control .anchor-3 .button:hover .blue-btn{
+
+#fr2:target~.control-block .control .anchor-4 .button:hover .blue-btn {
+
+    background-color: #fff;
+}
+
+#fr3:target~.control-block .control .anchor-3 .button:hover .blue-btn {
 
     border: 0.3vw solid #fff;
 }
 
-#fr3:target~.control-block .control .anchor-2 .button:hover .blue-btn{
-
-   background-color: #fff;
-}
-
-#fr3:target~.control-block .control .anchor-1 .button:hover .blue-btn{
+#fr3:target~.control-block .control .anchor-2 .button:hover .blue-btn {
 
     background-color: #fff;
 }
 
-#fr3:target~.control-block .control .anchor-4 .button:hover .blue-btn{
+#fr3:target~.control-block .control .anchor-1 .button:hover .blue-btn {
 
     background-color: #fff;
 }
-#fr4:target~.control-block .control .anchor-4 .button:hover .blue-btn{
+
+#fr3:target~.control-block .control .anchor-4 .button:hover .blue-btn {
+
+    background-color: #fff;
+}
+
+#fr4:target~.control-block .control .anchor-4 .button:hover .blue-btn {
 
     border: 0.3vw solid #fff;
 }
 
-#fr4:target~.control-block .control .anchor-2 .button:hover .blue-btn{
-
-   background-color: #fff;
-}
-
-#fr4:target~.control-block .control .anchor-3 .button:hover .blue-btn{
+#fr4:target~.control-block .control .anchor-2 .button:hover .blue-btn {
 
     background-color: #fff;
 }
 
-#fr4:target~.control-block .control .anchor-1 .button:hover .blue-btn{
-    
+#fr4:target~.control-block .control .anchor-3 .button:hover .blue-btn {
+
+    background-color: #fff;
+}
+
+#fr4:target~.control-block .control .anchor-1 .button:hover .blue-btn {
+
     background-color: #fff;
 }
 
 .control-block {
 
-
     height: 9.57vw;
     margin-top: 3vw;
 }
-.text-wrapper{
+
+.text-wrapper {
     background-color: #000;
 }
+
 .text {
     display: inline-block;
-    background-color: #000;
     color: #fff;
-    width: 50vw;
     height: 4vw;
+    width: 60vw;
     font-size: 3.5vw;
     overflow: hidden;
     vertical-align: top;
-
-
 }
-
 
 .control {
 
     display: inline-flex;
-
     width: 8.05vw;
     height: 3.5vw;
-    margin-left: 26.9vw;
+    margin-left: 16.9vw;
     margin-right: auto;
     vertical-align: top;
     white-space: nowrap;
+  
+    
 }
 
 .button {
@@ -517,6 +526,7 @@
     height: 3.5vw;
     width: 1.85vw;
     border: .01vw solid black;
+    
 
 }
 
@@ -527,22 +537,17 @@
     background-color: cornflowerblue;
     margin-left: .4vw;
     margin-top: 1.2vw;
+    transition: background-color 400ms;
 
 }
 
-/*.btn-1 .blue-btn {
-    width: .6vw;
-    height: .6vw;
-    background-color: transparent;
-    border: 0.3vw solid cornflowerblue;
+.button:hover .blue-btn {
+    background-color: #fff;
+}
 
-}*/
- .button:hover .blue-btn{
-     background-color: #fff;
- }
- .anchor-1:hover .blue-btn {
-     background-color: #fff;
- }
+.anchor-1:hover .blue-btn {
+    background-color: #fff;
+}
 
 
 @media screen and (max-width:720px) {
@@ -556,8 +561,6 @@
         to {
             opacity: 1;
             transform: translateX(0vw);
-
-
         }
     }
 
@@ -569,8 +572,7 @@
 
         to {
             opacity: 1;
-            transform: translateX(-81vw);
-
+            transform: translateX(-80vw);
 
         }
     }
@@ -583,9 +585,7 @@
 
         to {
             opacity: 1;
-            transform: translateX(-161vw);
-
-
+            transform: translateX(-160vw);
         }
     }
 
@@ -597,9 +597,7 @@
 
         to {
             opacity: 1;
-            transform: translateX(-242vw);
-
-
+            transform: translateX(-240vw);
         }
     }
 
@@ -616,8 +614,6 @@
     .wrapper {
         width: 80vw;
         height: 71vw;
-
-
     }
 
     .screen {
@@ -651,7 +647,7 @@
     .text {
 
         grid-area: txt;
-    
+
         width: 60vw;
         height: 4vw;
         font-size: 3.5vw;
@@ -681,17 +677,10 @@
         background-color: cornflowerblue;
         margin-left: .8vw;
         margin-top: 2.6vw;
-    
-    }
-    
-   /* .btn-1 .blue-btn {
-        width: 1.8vw;
-        height: 1.8vw;
-        background-color: transparent;
-        border: 0.5vw solid cornflowerblue;
-    
-    }*/
 
+    }
+
+    
     #fr1:target~.screen .inside {
         position: relative;
         animation: fr1-slide 1.5s;
@@ -702,7 +691,7 @@
         position: relative;
         animation: fr2-slide .5s;
         animation-timing-function: ease-in-out;
-        transform: translateX(-81vw);
+        transform: translateX(-80vw);
 
     }
 
@@ -710,7 +699,7 @@
         position: relative;
         animation: fr3-slide 1s;
         animation-timing-function: ease-in-out;
-        transform: translateX(-161vw);
+        transform: translateX(-160vw);
 
 
     }
@@ -719,7 +708,7 @@
         position: relative;
         animation: fr4-slide 1.5s;
         animation-timing-function: ease-in-out;
-        transform: translateX(-242vw);
+        transform: translateX(-240vw);
 
     }
 
@@ -730,6 +719,8 @@
         height: 1.8vw;
         background-color: transparent;
         border: 0.5vw solid cornflowerblue;
+        margin-top: 2.5vw;
+
 
     }
 
@@ -772,6 +763,8 @@
         height: 1.8vw;
         background-color: transparent;
         border: 0.5vw solid cornflowerblue;
+        margin-top: 2.5vw;
+
     }
 
     #fr2:target~.control-block .control .anchor-1 .button .blue-btn {
@@ -813,6 +806,7 @@
         height: 1.8vw;
         background-color: transparent;
         border: 0.5vw solid cornflowerblue;
+        margin-top: 2.5vw;
 
     }
 
@@ -854,6 +848,7 @@
         height: 1.8vw;
         background-color: transparent;
         border: 0.5vw solid cornflowerblue;
+        margin-top: 2.5vw;
 
     }
 
@@ -889,118 +884,121 @@
         margin-top: 2.6vw;
 
     }
-    #fr1:target~.control-block .control .anchor-1 .button:hover .blue-btn{
+
+    #fr1:target~.control-block .control .anchor-1 .button:hover .blue-btn {
 
         border: 0.5vw solid #fff;
     }
-    
-    #fr1:target~.control-block .control .anchor-2 .button:hover .blue-btn{
+
+    #fr1:target~.control-block .control .anchor-2 .button:hover .blue-btn {
         width: 2.8vw;
         height: 2.8vw;
         border-radius: 1.8vw;
-       background-color: #fff;
-       border: none;
+        background-color: #fff;
+        border: none;
     }
-    
-    #fr1:target~.control-block .control .anchor-3 .button:hover .blue-btn{
+
+    #fr1:target~.control-block .control .anchor-3 .button:hover .blue-btn {
         width: 2.8vw;
         height: 2.8vw;
         border-radius: 1.8vw;
         border: none;
         background-color: #fff;
     }
-    
-    #fr1:target~.control-block .control .anchor-4 .button:hover .blue-btn{
+
+    #fr1:target~.control-block .control .anchor-4 .button:hover .blue-btn {
         width: 2.8vw;
         height: 2.8vw;
         border-radius: 1.8vw;
         border: none;
         background-color: #fff;
     }
-    #fr2:target~.control-block .control .anchor-2 .button:hover .blue-btn{
-    
+
+    #fr2:target~.control-block .control .anchor-2 .button:hover .blue-btn {
+
         border: 0.5vw solid #fff;
     }
-    
-    #fr2:target~.control-block .control .anchor-1 .button:hover .blue-btn{
-        width: 2.8vw;
-        height: 2.8vw;
-        border-radius: 1.8vw;
-        border: none;
-       background-color: #fff;
-    }
-    
-    #fr2:target~.control-block .control .anchor-3 .button:hover .blue-btn{
+
+    #fr2:target~.control-block .control .anchor-1 .button:hover .blue-btn {
         width: 2.8vw;
         height: 2.8vw;
         border-radius: 1.8vw;
         border: none;
         background-color: #fff;
     }
-    
-    #fr2:target~.control-block .control .anchor-4 .button:hover .blue-btn{
+
+    #fr2:target~.control-block .control .anchor-3 .button:hover .blue-btn {
         width: 2.8vw;
         height: 2.8vw;
         border-radius: 1.8vw;
         border: none;
         background-color: #fff;
     }
-    #fr3:target~.control-block .control .anchor-3 .button:hover .blue-btn{
-    
+
+    #fr2:target~.control-block .control .anchor-4 .button:hover .blue-btn {
+        width: 2.8vw;
+        height: 2.8vw;
+        border-radius: 1.8vw;
+        border: none;
+        background-color: #fff;
+    }
+
+    #fr3:target~.control-block .control .anchor-3 .button:hover .blue-btn {
+
         border: 0.5vw solid #fff;
     }
-    
-    #fr3:target~.control-block .control .anchor-2 .button:hover .blue-btn{
-        width: 2.8vw;
-        height: 2.8vw;
-        border-radius: 1.8vw;
-        border: none;
-       background-color: #fff;
-    }
-    
-    #fr3:target~.control-block .control .anchor-1 .button:hover .blue-btn{
+
+    #fr3:target~.control-block .control .anchor-2 .button:hover .blue-btn {
         width: 2.8vw;
         height: 2.8vw;
         border-radius: 1.8vw;
         border: none;
         background-color: #fff;
     }
-    
-    #fr3:target~.control-block .control .anchor-4 .button:hover .blue-btn{
+
+    #fr3:target~.control-block .control .anchor-1 .button:hover .blue-btn {
         width: 2.8vw;
         height: 2.8vw;
         border-radius: 1.8vw;
         border: none;
         background-color: #fff;
     }
-    #fr4:target~.control-block .control .anchor-4 .button:hover .blue-btn{
-    
+
+    #fr3:target~.control-block .control .anchor-4 .button:hover .blue-btn {
+        width: 2.8vw;
+        height: 2.8vw;
+        border-radius: 1.8vw;
+        border: none;
+        background-color: #fff;
+    }
+
+    #fr4:target~.control-block .control .anchor-4 .button:hover .blue-btn {
+
         border: 0.5vw solid #fff;
     }
-    
-    #fr4:target~.control-block .control .anchor-2 .button:hover .blue-btn{
-        width: 2.8vw;
-        height: 2.8vw;
-        border-radius: 1.8vw;
-        border: none;
-       background-color: #fff;
-    }
-    
-    #fr4:target~.control-block .control .anchor-3 .button:hover .blue-btn{
+
+    #fr4:target~.control-block .control .anchor-2 .button:hover .blue-btn {
         width: 2.8vw;
         height: 2.8vw;
         border-radius: 1.8vw;
         border: none;
         background-color: #fff;
     }
-    
-    #fr4:target~.control-block .control .anchor-1 .button:hover .blue-btn{
+
+    #fr4:target~.control-block .control .anchor-3 .button:hover .blue-btn {
         width: 2.8vw;
         height: 2.8vw;
         border-radius: 1.8vw;
         border: none;
         background-color: #fff;
     }
-    
-    
+
+    #fr4:target~.control-block .control .anchor-1 .button:hover .blue-btn {
+        width: 2.8vw;
+        height: 2.8vw;
+        border-radius: 1.8vw;
+        border: none;
+        background-color: #fff;
+    }
+
 }
