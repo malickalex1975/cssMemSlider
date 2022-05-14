@@ -1,0 +1,1010 @@
+@keyframes text-slide1 {
+    from {
+        opacity: 0.7;
+        filter: blur(1vmin);
+        transform: translateY(-16vmin);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateY(0vmin);
+
+    }
+}
+
+@keyframes text-slide2 {
+    from {
+        opacity: 0.7;
+        filter: blur(1vmin);
+        transform: translateY(0vmin);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateY(-4vmin);
+
+    }
+}
+
+@keyframes text-slide3 {
+    from {
+        opacity: 0.7;
+        filter: blur(1vmin);
+        transform: translateY(0vmin);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateY(-8vmin);
+
+    }
+}
+
+@keyframes text-slide4 {
+    from {
+        opacity: 0.7;
+        filter: blur(1vmin);
+        transform: translateY(0vmin);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateY(-12vmin);
+
+    }
+}
+
+@keyframes fr1-slide {
+    from {
+        opacity: 0;
+        transform: translateX(-256.95vmin) ;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0vmin) ;
+
+
+    }
+}
+
+@keyframes fr2-slide {
+    from {
+        opacity: 0;
+        transform: translateX(0vmin);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-85.65vmin);
+
+
+    }
+}
+
+@keyframes fr3-slide {
+    from {
+        opacity: 0;
+        transform: translateX(-0vmin);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-171.3vmin);
+
+
+    }
+}
+
+@keyframes fr4-slide {
+    from {
+        opacity: 0;
+        transform: translateX(0vmin);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-256.95vmin);
+
+
+    }
+}
+body{
+    background-image: linear-gradient(to right, #eeeeee ,#aaaaaa);
+}
+.container {
+
+    
+    width: 90vmin;
+    height: 51.7vmin;
+    background-color: #000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24.15vmin;
+    margin-bottom: auto;
+    padding-top: 1.3vmin;
+    box-shadow: 2vmin 1vmin 5vmin ;
+
+}
+
+.wrapper {
+    width: 85.65vmin;
+    height: 51.7vmin;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+
+}
+
+.screen {
+
+
+    height: 39.13vmin;
+    border-radius: 1.5vmin;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.frame {
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    width: 85.65vmin;
+    height: 39.13vmin;
+}
+
+.inside {
+    font-size: 0vmin;
+}
+
+.frame-1 {
+
+    background-image: url("assets/move-div.jpg");
+}
+
+.frame-2 {
+
+    background-image: url("assets/looks-n-written.jpg");
+}
+
+.frame-3 {
+
+    background-image: url("assets/webdevelopers-hide.jpg");
+}
+
+.frame-4 {
+
+    background-image: url("assets/web-technologies.jpg");
+}
+
+#fr1:target~.screen .inside {
+    position: relative;
+    animation: fr1-slide 1.5s;
+    animation-timing-function:ease-in-out;
+}
+
+#fr2:target~.screen .inside {
+    position: relative;
+    animation: fr2-slide .5s;
+    animation-timing-function: ease-in-out;
+    transform: translateX(-85.65vmin);
+
+}
+
+#fr3:target~.screen .inside {
+    position: relative;
+    animation: fr3-slide 1s;
+    animation-timing-function: ease-in-out;
+    transform: translateX(-171.3vmin);
+
+}
+
+#fr4:target~.screen .inside {
+    position: relative;
+    animation: fr4-slide 1.5s;
+    animation-timing-function: ease-in-out;
+    transform: translateX(-256.95vmin);
+
+}
+
+#fr1:target~.control-block .text .text-wrapper {
+    position: relative;
+    animation: text-slide1 1.5s;
+    animation-timing-function: ease-in-out;
+    transform: translateY(-0vmin);
+}
+
+#fr2:target~.control-block .text .text-wrapper {
+    position: relative;
+    animation: text-slide2 .5s;
+    animation-timing-function: ease-in-out;
+    transform: translateY(-4vmin);
+}
+
+#fr3:target~.control-block .text .text-wrapper {
+    position: relative;
+    animation: text-slide3 1s;
+    animation-timing-function: ease-in-out;
+    transform: translateY(-8vmin);
+}
+
+#fr4:target~.control-block .text .text-wrapper {
+    position: relative;
+    animation: text-slide4 1.5s;
+    animation-timing-function: ease-in-out;
+    transform: translateY(-12vmin);
+}
+
+#fr1:target~.control-block .control .anchor-1 .button .blue-btn {
+
+    width: .6vmin;
+    height: .6vmin;
+    background-color: transparent;
+    border: 0.25vmin solid cornflowerblue;
+    margin-top: 1.2vmin;
+
+
+}
+
+#fr1:target~.control-block .control .anchor-2 .button .blue-btn {
+
+    width: 1.1vmin;
+    height: 1.1vmin;
+    border-radius: 1.1vmin;
+    background-color: cornflowerblue;
+    margin-left: .4vmin;
+    margin-top: 1.2vmin;
+
+}
+
+#fr1:target~.control-block .control .anchor-3 .button .blue-btn {
+
+    width: 1.1vmin;
+    height: 1.1vmin;
+    border-radius: 1.1vmin;
+    background-color: cornflowerblue;
+    margin-left: .4vmin;
+    margin-top: 1.2vmin;
+
+}
+
+#fr1:target~.control-block .control .anchor-4 .button .blue-btn {
+
+    width: 1.1vmin;
+    height: 1.1vmin;
+    border-radius: 1.1vmin;
+    background-color: cornflowerblue;
+    margin-left: .4vmin;
+    margin-top: 1.2vmin;
+}
+
+#fr2:target~.control-block .control .anchor-2 .button .blue-btn {
+
+    width: .6vmin;
+    height: .6vmin;
+    background-color: transparent;
+    border: 0.25vmin solid cornflowerblue;
+    margin-top: 1.2vmin;
+
+
+}
+
+#fr2:target~.control-block .control .anchor-1 .button .blue-btn {
+    width: 1.1vmin;
+    height: 1.1vmin;
+    border-radius: 1.1vmin;
+    background-color: cornflowerblue;
+    margin-left: .4vmin;
+    margin-top: 1.2vmin;
+}
+
+#fr2:target~.control-block .control .anchor-3 .button .blue-btn {
+
+    width: 1.1vmin;
+    height: 1.1vmin;
+    border-radius: 1.1vmin;
+    background-color: cornflowerblue;
+    margin-left: .4vmin;
+    margin-top: 1.2vmin;
+
+}
+
+#fr2:target~.control-block .control .anchor-4 .button .blue-btn {
+
+    width: 1.1vmin;
+    height: 1.1vmin;
+    border-radius: 1.1vmin;
+    background-color: cornflowerblue;
+    margin-left: .4vmin;
+    margin-top: 1.2vmin;
+
+}
+
+#fr3:target~.control-block .control .anchor-3 .button .blue-btn {
+
+    width: .6vmin;
+    height: .6vmin;
+    background-color: transparent;
+    border: 0.25vmin solid cornflowerblue;
+    margin-top: 1.2vmin;
+
+}
+
+#fr3:target~.control-block .control .anchor-1 .button .blue-btn {
+
+    width: 1.1vmin;
+    height: 1.1vmin;
+    border-radius: 1.1vmin;
+    background-color: cornflowerblue;
+    margin-left: .4vmin;
+    margin-top: 1.2vmin;
+
+}
+
+#fr3:target~.control-block .control .anchor-2 .button .blue-btn {
+    width: 1.1vmin;
+    height: 1.1vmin;
+    border-radius: 1.1vmin;
+    background-color: cornflowerblue;
+    margin-left: .4vmin;
+    margin-top: 1.2vmin;
+
+}
+
+#fr3:target~.control-block .control .anchor-4 .button .blue-btn {
+
+    width: 1.1vmin;
+    height: 1.1vmin;
+    border-radius: 1.1vmin;
+    background-color: cornflowerblue;
+    margin-left: .4vmin;
+    margin-top: 1.2vmin;
+
+}
+
+#fr4:target~.control-block .control .anchor-4 .button .blue-btn {
+
+    width: .6vmin;
+    height: .6vmin;
+    background-color: transparent;
+    border: 0.25vmin solid cornflowerblue;
+    margin-top: 1.2vmin;
+
+}
+
+#fr4:target~.control-block .control .anchor-1 .button .blue-btn {
+
+    width: 1.1vmin;
+    height: 1.1vmin;
+    border-radius: 1.1vmin;
+    background-color: cornflowerblue;
+    margin-left: .4vmin;
+    margin-top: 1.2vmin;
+
+}
+
+#fr4:target~.control-block .control .anchor-3 .button .blue-btn {
+    width: 1.1vmin;
+    height: 1.1vmin;
+    border-radius: 1.1vmin;
+    background-color: cornflowerblue;
+    margin-left: .4vmin;
+    margin-top: 1.2vmin;
+
+}
+
+#fr4:target~.control-block .control .anchor-2 .button .blue-btn {
+
+    width: 1.1vmin;
+    height: 1.1vmin;
+    border-radius: 1.1vmin;
+    background-color: cornflowerblue;
+    margin-left: .4vmin;
+    margin-top: 1.2vmin;
+
+}
+
+#fr1:target~.control-block .control .anchor-1 .button:hover .blue-btn {
+
+    border: 0.25vmin solid #fff;
+}
+
+#fr1:target~.control-block .control .anchor-2 .button:hover .blue-btn {
+
+    background-color: #fff;
+}
+
+#fr1:target~.control-block .control .anchor-3 .button:hover .blue-btn {
+
+    background-color: #fff;
+}
+
+#fr1:target~.control-block .control .anchor-4 .button:hover .blue-btn {
+
+    background-color: #fff;
+}
+
+#fr2:target~.control-block .control .anchor-2 .button:hover .blue-btn {
+
+    border: 0.25vmin solid #fff;
+}
+
+#fr2:target~.control-block .control .anchor-1 .button:hover .blue-btn {
+
+    background-color: #fff;
+}
+
+#fr2:target~.control-block .control .anchor-3 .button:hover .blue-btn {
+
+    background-color: #fff;
+}
+
+#fr2:target~.control-block .control .anchor-4 .button:hover .blue-btn {
+
+    background-color: #fff;
+}
+
+#fr3:target~.control-block .control .anchor-3 .button:hover .blue-btn {
+
+    border: 0.25vmin solid #fff;
+}
+
+#fr3:target~.control-block .control .anchor-2 .button:hover .blue-btn {
+
+    background-color: #fff;
+}
+
+#fr3:target~.control-block .control .anchor-1 .button:hover .blue-btn {
+
+    background-color: #fff;
+}
+
+#fr3:target~.control-block .control .anchor-4 .button:hover .blue-btn {
+
+    background-color: #fff;
+}
+
+#fr4:target~.control-block .control .anchor-4 .button:hover .blue-btn {
+
+    border: 0.25vmin solid #fff;
+}
+
+#fr4:target~.control-block .control .anchor-2 .button:hover .blue-btn {
+
+    background-color: #fff;
+}
+
+#fr4:target~.control-block .control .anchor-3 .button:hover .blue-btn {
+
+    background-color: #fff;
+}
+
+#fr4:target~.control-block .control .anchor-1 .button:hover .blue-btn {
+
+    background-color: #fff;
+}
+
+.control-block {
+
+    height: 9.57vmin;
+    margin-top: 3vmin;
+    font-size: 0;
+}
+
+.text-wrapper {
+    background-color: #000;
+}
+
+.text {
+    display: inline-block;
+    color: #fff;
+    height: 4vmin;
+    width: 66vmin;
+    font-size: 3.5vmin;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.control {
+
+    display: inline-flex;
+    width: 8.05vmin;
+    height: 3.5vmin;
+    margin-left: 11vmin;
+    margin-right: auto;
+    vertical-align: top;
+    white-space: nowrap;
+    font-size: 0;
+  
+    
+}
+
+.button {
+    display: inline-flex;
+    height: 3.5vmin;
+    width: 2.2vmin;
+    font-size: 0;
+    
+    
+
+}
+
+.blue-btn {
+    width: 1.1vmin;
+    height: 1.1vmin;
+    border-radius: 1.1vmin;
+    background-color: cornflowerblue;
+    margin-left: .4vmin;
+    margin-top: 1.2vmin;
+    transition: background-color 400ms;
+
+}
+
+.button:hover .blue-btn {
+    background-color: #fff;
+}
+
+.anchor-1:hover .blue-btn {
+    background-color: #fff;
+}
+
+
+@media screen and (max-width:720px) {
+
+    @keyframes fr1-slide {
+        from {
+            opacity: 0;
+            transform: translateX(-240vmin);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0vmin);
+        }
+    }
+
+    @keyframes fr2-slide {
+        from {
+            opacity: 0;
+            transform: translateX(0vmin);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(-80vmin);
+
+        }
+    }
+
+    @keyframes fr3-slide {
+        from {
+            opacity: 0;
+            transform: translateX(0vmin);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(-160vmin);
+        }
+    }
+
+    @keyframes fr4-slide {
+        from {
+            opacity: 0;
+            transform: translateX(0vmin);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(-240vmin);
+        }
+    }
+
+
+
+    .container {
+        width: 90vmin;
+        height: 71vmin;
+        margin-top: 14.5vmin;
+        padding-top: 3vmin;
+
+    }
+
+    .wrapper {
+        width: 80vmin;
+        height: 71vmin;
+    }
+
+    .screen {
+
+        height: 36vmin;
+        border-radius: 1.5vmin;
+
+
+    }
+
+    .frame {
+
+        width: 80vmin;
+        height: 36vmin;
+    }
+
+
+    .control-block {
+        display: grid;
+        grid-template-areas:
+            ". . ."
+            " ctrl . ."
+            ". . ."
+            "txt . ."
+            ". . ."
+            ". . .";
+        height: 35vmin;
+        margin-top: 0vmin;
+    }
+
+    .text {
+
+        grid-area: txt;
+
+        width: 60vmin;
+        height: 4vmin;
+        font-size: 3.5vmin;
+
+    }
+
+    .control {
+        grid-area: ctrl;
+        width: 20vmin;
+        height: 8vmin;
+        margin-left: 29.4vmin;
+
+
+    }
+
+    .button {
+        height: 8vmin;
+        width: 5.6vmin;
+
+       
+
+    }
+
+
+    .blue-btn {
+        width: 2.8vmin;
+        height: 2.8vmin;
+        border-radius: 1.8vmin;
+        background-color: cornflowerblue;
+        margin-left: .8vmin;
+        margin-top: 2.6vmin;
+
+    }
+
+    
+    #fr1:target~.screen .inside {
+        position: relative;
+        animation: fr1-slide 1.5s;
+        animation-timing-function: ease-in-out;
+    }
+
+    #fr2:target~.screen .inside {
+        position: relative;
+        animation: fr2-slide .5s;
+        animation-timing-function: ease-in-out;
+        transform: translateX(-80vmin);
+
+    }
+
+    #fr3:target~.screen .inside {
+        position: relative;
+        animation: fr3-slide 1s;
+        animation-timing-function: ease-in-out;
+        transform: translateX(-160vmin);
+
+
+    }
+
+    #fr4:target~.screen .inside {
+        position: relative;
+        animation: fr4-slide 1.5s;
+        animation-timing-function: ease-in-out;
+        transform: translateX(-240vmin);
+
+    }
+
+
+    #fr1:target~.control-block .control .anchor-1 .button .blue-btn {
+
+        width: 1.8vmin;
+        height: 1.8vmin;
+        background-color: transparent;
+        border: 0.5vmin solid cornflowerblue;
+        margin-top: 2.6vmin;
+
+
+    }
+
+    #fr1:target~.control-block .control .anchor-2 .button .blue-btn {
+        width: 2.8vmin;
+        height: 2.8vmin;
+        border-radius: 1.8vmin;
+        background-color: cornflowerblue;
+        margin-left: .8vmin;
+        margin-top: 2.6vmin;
+
+    }
+
+    #fr1:target~.control-block .control .anchor-3 .button .blue-btn {
+
+        width: 2.8vmin;
+        height: 2.8vmin;
+        border-radius: 1.8vmin;
+        background-color: cornflowerblue;
+        margin-left: .8vmin;
+        margin-top: 2.6vmin;
+
+    }
+
+    #fr1:target~.control-block .control .anchor-4 .button .blue-btn {
+
+        width: 2.8vmin;
+        height: 2.8vmin;
+        border-radius: 1.8vmin;
+        background-color: cornflowerblue;
+        margin-left: .8vmin;
+        margin-top: 2.6vmin;
+    }
+
+    #fr2:target~.control-block .control .anchor-2 .button .blue-btn {
+
+        width: 1.8vmin;
+        height: 1.8vmin;
+        background-color: transparent;
+        border: 0.5vmin solid cornflowerblue;
+        margin-top: 2.6vmin;
+
+    }
+
+    #fr2:target~.control-block .control .anchor-1 .button .blue-btn {
+
+        width: 2.8vmin;
+        height: 2.8vmin;
+        border-radius: 1.8vmin;
+        background-color: cornflowerblue;
+        margin-left: .8vmin;
+        margin-top: 2.6vmin;
+
+    }
+
+    #fr2:target~.control-block .control .anchor-3 .button .blue-btn {
+
+        width: 2.8vmin;
+        height: 2.8vmin;
+        border-radius: 1.8vmin;
+        background-color: cornflowerblue;
+        margin-left: .8vmin;
+        margin-top: 2.6vmin;
+
+    }
+
+    #fr2:target~.control-block .control .anchor-4 .button .blue-btn {
+
+        width: 2.8vmin;
+        height: 2.8vmin;
+        border-radius: 1.8vmin;
+        background-color: cornflowerblue;
+        margin-left: .8vmin;
+        margin-top: 2.6vmin;
+
+    }
+
+    #fr3:target~.control-block .control .anchor-3 .button .blue-btn {
+
+        width: 1.8vmin;
+        height: 1.8vmin;
+        background-color: transparent;
+        border: 0.5vmin solid cornflowerblue;
+        margin-top: 2.6vmin;
+
+    }
+
+    #fr3:target~.control-block .control .anchor-1 .button .blue-btn {
+
+        width: 2.8vmin;
+        height: 2.8vmin;
+        border-radius: 1.8vmin;
+        background-color: cornflowerblue;
+        margin-left: .8vmin;
+        margin-top: 2.6vmin;
+
+    }
+
+    #fr3:target~.control-block .control .anchor-2 .button .blue-btn {
+
+        width: 2.8vmin;
+        height: 2.8vmin;
+        border-radius: 1.8vmin;
+        background-color: cornflowerblue;
+        margin-left: .8vmin;
+        margin-top: 2.6vmin;
+
+    }
+
+    #fr3:target~.control-block .control .anchor-4 .button .blue-btn {
+
+        width: 2.8vmin;
+        height: 2.8vmin;
+        border-radius: 1.8vmin;
+        background-color: cornflowerblue;
+        margin-left: .8vmin;
+        margin-top: 2.6vmin;
+    }
+
+    #fr4:target~.control-block .control .anchor-4 .button .blue-btn {
+
+        width: 1.8vmin;
+        height: 1.8vmin;
+        background-color: transparent;
+        border: 0.5vmin solid cornflowerblue;
+        margin-top: 2.6vmin;
+
+    }
+
+    #fr4:target~.control-block .control .anchor-1 .button .blue-btn {
+
+        width: 2.8vmin;
+        height: 2.8vmin;
+        border-radius: 1.8vmin;
+        background-color: cornflowerblue;
+        margin-left: .8vmin;
+        margin-top: 2.6vmin;
+    }
+
+    #fr4:target~.control-block .control .anchor-3 .button .blue-btn {
+
+        width: 2.8vmin;
+        height: 2.8vmin;
+        border-radius: 1.8vmin;
+        background-color: cornflowerblue;
+        margin-left: .8vmin;
+        margin-top: 2.6vmin;
+
+    }
+
+    #fr4:target~.control-block .control .anchor-2 .button .blue-btn {
+
+        width: 2.8vmin;
+        height: 2.8vmin;
+        border-radius: 1.8vmin;
+        background-color: cornflowerblue;
+        margin-left: .8vmin;
+        margin-top: 2.6vmin;
+
+    }
+
+    #fr1:target~.control-block .control .anchor-1 .button:hover .blue-btn {
+
+        border: 0.5vmin solid #fff;
+    }
+
+    #fr1:target~.control-block .control .anchor-2 .button:hover .blue-btn {
+        width: 2.8vmin;
+        height: 2.8vmin;
+        border-radius: 1.8vmin;
+        background-color: #fff;
+        border: none;
+    }
+
+    #fr1:target~.control-block .control .anchor-3 .button:hover .blue-btn {
+        width: 2.8vmin;
+        height: 2.8vmin;
+        border-radius: 1.8vmin;
+        border: none;
+        background-color: #fff;
+    }
+
+    #fr1:target~.control-block .control .anchor-4 .button:hover .blue-btn {
+        width: 2.8vmin;
+        height: 2.8vmin;
+        border-radius: 1.8vmin;
+        border: none;
+        background-color: #fff;
+    }
+
+    #fr2:target~.control-block .control .anchor-2 .button:hover .blue-btn {
+
+        border: 0.5vmin solid #fff;
+    }
+
+    #fr2:target~.control-block .control .anchor-1 .button:hover .blue-btn {
+        width: 2.8vmin;
+        height: 2.8vmin;
+        border-radius: 1.8vmin;
+        border: none;
+        background-color: #fff;
+    }
+
+    #fr2:target~.control-block .control .anchor-3 .button:hover .blue-btn {
+        width: 2.8vmin;
+        height: 2.8vmin;
+        border-radius: 1.8vmin;
+        border: none;
+        background-color: #fff;
+    }
+
+    #fr2:target~.control-block .control .anchor-4 .button:hover .blue-btn {
+        width: 2.8vmin;
+        height: 2.8vmin;
+        border-radius: 1.8vmin;
+        border: none;
+        background-color: #fff;
+    }
+
+    #fr3:target~.control-block .control .anchor-3 .button:hover .blue-btn {
+
+        border: 0.5vmin solid #fff;
+    }
+
+    #fr3:target~.control-block .control .anchor-2 .button:hover .blue-btn {
+        width: 2.8vmin;
+        height: 2.8vmin;
+        border-radius: 1.8vmin;
+        border: none;
+        background-color: #fff;
+    }
+
+    #fr3:target~.control-block .control .anchor-1 .button:hover .blue-btn {
+        width: 2.8vmin;
+        height: 2.8vmin;
+        border-radius: 1.8vmin;
+        border: none;
+        background-color: #fff;
+    }
+
+    #fr3:target~.control-block .control .anchor-4 .button:hover .blue-btn {
+        width: 2.8vmin;
+        height: 2.8vmin;
+        border-radius: 1.8vmin;
+        border: none;
+        background-color: #fff;
+    }
+
+    #fr4:target~.control-block .control .anchor-4 .button:hover .blue-btn {
+
+        border: 0.5vmin solid #fff;
+    }
+
+    #fr4:target~.control-block .control .anchor-2 .button:hover .blue-btn {
+        width: 2.8vmin;
+        height: 2.8vmin;
+        border-radius: 1.8vmin;
+        border: none;
+        background-color: #fff;
+    }
+
+    #fr4:target~.control-block .control .anchor-3 .button:hover .blue-btn {
+        width: 2.8vmin;
+        height: 2.8vmin;
+        border-radius: 1.8vmin;
+        border: none;
+        background-color: #fff;
+    }
+
+    #fr4:target~.control-block .control .anchor-1 .button:hover .blue-btn {
+        width: 2.8vmin;
+        height: 2.8vmin;
+        border-radius: 1.8vmin;
+        border: none;
+        background-color: #fff;
+    }
+
+
+}
